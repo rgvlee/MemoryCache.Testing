@@ -88,6 +88,7 @@ I'm not going to go deep into NSubstitute usage as, well, it is the same except 
 ## Basic usage
 - Get a mocked lazy cache
 - Consume
+
 ```
 [Test]
 public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
@@ -104,6 +105,7 @@ public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
 
 ## Explicit cache entry set up
 Same same just with the explicit ```SetUpCacheEntry``` to set up the specified cache entry.
+
 ```
 [Test]
 public virtual void GetOrAddWithSetUp_Guid_ReturnsExpectedResult() {
