@@ -6,6 +6,7 @@ using NUnit.Framework;
 using System;
 
 namespace MemoryCache.Testing.Moq.PackageVerification.Tests {
+    [TestFixture]
     public class Tests {
         [SetUp]
         public virtual void SetUp() {
