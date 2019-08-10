@@ -2,6 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>rgvlee</Authors>
+    <Company>rgvlee</Company>
+    <Description>A mocking library for Microsoft.Extensions.Caching.Memory.IMemoryCache using Moq.</Description>
+    <Copyright>Copyright (c) 2019 Lee Anderson</Copyright>
+    <PackageLicenseUrl>https://github.com/rgvlee/MemoryCache.Testing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/rgvlee/MemoryCache.Testing/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rgvlee/MemoryCache.Testing/</RepositoryUrl>
+    <PackageTags>Microsoft Microsoft.Extensions.Caching.Memory.IMemoryCache IMemoryCache MemoryCache moq mock mocking test testing</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>MemoryCache.Testing.Moq.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MemoryCache.Testing.Moq</name>
+    </assembly>
+    <members>
+        <member name="T:MemoryCache.Testing.Moq.CacheEntryFake">
+            <summary>
+            A fake cache entry.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.CacheEntryFake.#ctor(System.Object,Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="key">The cache entry key.</param>
+            <param name="memoryCacheMock">The memory cache mock instance.</param>
+        </member>
+        <member name="P:MemoryCache.Testing.Moq.CacheEntryFake.Value">
+            <inheritdoc />
+        </member>
+        <member name="T:MemoryCache.Testing.Moq.Extensions.MockExtensions">
+            <summary>
+            Extensions for mocks.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
+            <summary>
+            Sets up a cache entry.
+            </summary>
+            <param name="memoryCacheMock">The memory cache mock instance.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="cacheEntryValue">The cache entry value.</param>
+            <returns>The memory cache mock.</returns>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntryCreate(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
+            <summary>
+            Sets up the CreateEntry method for a cache entry.
+            </summary>
+            <param name="memoryCacheMock">The memory cache mock instance.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="cacheEntryValue">The cache entry value.</param>
+            <returns>The memory cache mock.</returns>
+            <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)"/>.</remarks>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntryGet(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
+            <summary>
+            Sets up the TryGetValue method for a cache entry.
+            </summary>
+            <param name="memoryCacheMock">The memory cache mock instance.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="cacheEntryValue">The cache entry value.</param>
+            <returns>The memory cache mock.</returns>
+            <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)"/>.</remarks>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntryRemove(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
+            <summary>
+            Sets up the Remove method for a cache entry.
+            </summary>
+            <param name="memoryCacheMock">The memory cache mock instance.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="defaultValue">The default value (e.g., default(T)) for the cache entry value.</param>
+            <returns>The memory cache mock.</returns>
+            <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)"/>.</remarks>
+        </member>
+        <member name="T:MemoryCache.Testing.Moq.MockFactory">
+            <summary>
+            Factory for creating mock/mocked instances.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.MockFactory.CreateMemoryCacheMock">
+            <summary>
+            Creates a memory cache mock.
+            </summary>
+            <returns>A memory cache mock.</returns>
+        </member>
+        <member name="M:MemoryCache.Testing.Moq.MockFactory.CreateMockedMemoryCache">
+            <summary>
+            Creates a mocked memory cache.
+            </summary>
+            <returns>A mocked memory cache.</returns>
+        </member>
+    </members>
+</doc>

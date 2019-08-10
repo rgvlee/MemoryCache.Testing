@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MemoryCache.Testing.Common</name>
+    </assembly>
+    <members>
+        <member name="T:MemoryCache.Testing.Common.CacheEntryFake">
+            <summary>
+            A fake cache entry.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.CacheEntryFake.#ctor(System.Object)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="key">The cache entry key.</param>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.CacheEntryFake.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.Key">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.Value">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.AbsoluteExpiration">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.AbsoluteExpirationRelativeToNow">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.SlidingExpiration">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.ExpirationTokens">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.PostEvictionCallbacks">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.Priority">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.Common.CacheEntryFake.Size">
+            <inheritdoc />
+        </member>
+        <member name="T:MemoryCache.Testing.Common.Extensions.TypeExtensions">
+            <summary>
+            Extensions for types.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Extensions.TypeExtensions.GetDefaultValue(System.Type)">
+            <summary>
+            Gets the default value for the specified type.
+            </summary>
+            <param name="type">The type instance.</param>
+            <returns>The default value for the specified type.</returns>
+        </member>
+        <member name="T:MemoryCache.Testing.Common.Helpers.LoggerHelper">
+            <summary>
+            Helper for creating logger instances.
+            </summary>
+        </member>
+        <member name="P:MemoryCache.Testing.Common.Helpers.LoggerHelper.LoggerFactory">
+            <summary>
+            Gets or sets the logger factory.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.LoggerHelper.CreateLogger``1">
+            <summary>
+            Creates a new ILogger instance using the full name of the specified type.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <returns>A new <see cref="T:Microsoft.Extensions.Logging.ILogger`1"/> instance.</returns>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.LoggerHelper.CreateLogger(System.String)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.Extensions.Logging.ILogger"/> instance.
+            </summary>
+            <param name="categoryName">The category name for messages produced by the logger.</param>
+            <returns>A new <see cref="T:Microsoft.Extensions.Logging.ILogger"/> instance.</returns>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.LoggerHelper.CreateLogger(System.Type)">
+            <summary>
+            Creates a new ILogger instance using the full name of the specified type.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>A new <see cref="T:Microsoft.Extensions.Logging.ILogger"/> instance.</returns>
+        </member>
+    </members>
+</doc>

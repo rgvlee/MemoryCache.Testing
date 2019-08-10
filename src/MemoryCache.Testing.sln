@@ -10,10 +10,23 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCache.Testing.Moq.Tests", "MemoryCache.Testing.Moq.Tests\MemoryCache.Testing.Moq.Tests.csproj", "{9CB85238-BB73-412E-995A-96E81B037F54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAA51D2B-3ED5-42EA-9A4E-2A52BC6159BD}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		MemoryCache.Testing.Common\MemoryCache.Testing.Common.xml = MemoryCache.Testing.Common\MemoryCache.Testing.Common.xml
+		..\MemoryCache.Testing.Moq.nuspec = ..\MemoryCache.Testing.Moq.nuspec
+		MemoryCache.Testing.Moq\MemoryCache.Testing.Moq.xml = MemoryCache.Testing.Moq\MemoryCache.Testing.Moq.xml
+		..\README.md = ..\README.md
+		..\TODO.md = ..\TODO.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{362E2B67-8C6E-401B-9ECE-B251B145869D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCache.Testing.Common.Tests", "MemoryCache.Testing.Common.Tests\MemoryCache.Testing.Common.Tests.csproj", "{D0A3F73E-A164-4711-83BE-12A2F91E6329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package Verification", "Package Verification", "{5B404ED7-B1D0-4052-812B-0779E7CD97A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryCache.Testing.Moq.PackageVerification.Tests", "MemoryCache.Testing.Moq.PackageVerification.Tests\MemoryCache.Testing.Moq.PackageVerification.Tests.csproj", "{EB8D7882-DCFE-4D3B-B872-6FEACF530849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +50,10 @@ Global
 		{D0A3F73E-A164-4711-83BE-12A2F91E6329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A3F73E-A164-4711-83BE-12A2F91E6329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A3F73E-A164-4711-83BE-12A2F91E6329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8D7882-DCFE-4D3B-B872-6FEACF530849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8D7882-DCFE-4D3B-B872-6FEACF530849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8D7882-DCFE-4D3B-B872-6FEACF530849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8D7882-DCFE-4D3B-B872-6FEACF530849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +61,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9CB85238-BB73-412E-995A-96E81B037F54} = {362E2B67-8C6E-401B-9ECE-B251B145869D}
 		{D0A3F73E-A164-4711-83BE-12A2F91E6329} = {362E2B67-8C6E-401B-9ECE-B251B145869D}
+		{EB8D7882-DCFE-4D3B-B872-6FEACF530849} = {5B404ED7-B1D0-4052-812B-0779E7CD97A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C21C18E-E656-4EF9-9FD0-60FFA2FDC4D7}
