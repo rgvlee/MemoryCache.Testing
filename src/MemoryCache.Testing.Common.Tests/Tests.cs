@@ -16,9 +16,7 @@ namespace MemoryCache.Testing.Common.Tests {
             
         [SetUp]
         public virtual void SetUp() {
-            var loggerFactory = new LoggerFactory();
-            loggerFactory.AddConsole(LogLevel.Debug);
-            LoggerHelper.LoggerFactory = loggerFactory;
+            LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
         }
 
         [Test]
@@ -206,6 +204,15 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
+        public virtual void RemoveWithNoSetUp_DoesNothing() {
+            var cacheEntryKey = "SomethingInTheCache";
+
+            Assert.DoesNotThrow(() => {
+                MockedCache.Remove(cacheEntryKey);
+            });
+        }
+
+        [Test]
         public virtual void RemoveWithNoSetUp_Guid_ReturnsDefaultValue() {
             var cacheEntryKey = "SomethingInTheCache";
             
@@ -220,11 +227,17 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void RemoveWithNoSetUp_DoesNothing() {
+        public virtual void GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue() {
             var cacheEntryKey = "SomethingInTheCache";
+            var expectedResult1 = Guid.NewGuid();
 
-            Assert.DoesNotThrow(() => {
-                MockedCache.Remove(cacheEntryKey);
+            var actualResult1 = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult1);
+            MockedCache.Remove(cacheEntryKey);
+            var actualResult2 = MockedCache.Get<Guid>(cacheEntryKey);
+
+            Assert.Multiple(() => {
+                Assert.That(actualResult1, Is.EqualTo(expectedResult1));
+                Assert.That(actualResult2, Is.EqualTo(default(Guid)));
             });
         }
     }
