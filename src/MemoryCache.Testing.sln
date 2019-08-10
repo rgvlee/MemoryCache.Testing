@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MemoryCache.Testing.Common\MemoryCache.Testing.Common.xml = MemoryCache.Testing.Common\MemoryCache.Testing.Common.xml
 		..\MemoryCache.Testing.Moq.nuspec = ..\MemoryCache.Testing.Moq.nuspec
 		MemoryCache.Testing.Moq\MemoryCache.Testing.Moq.xml = MemoryCache.Testing.Moq\MemoryCache.Testing.Moq.xml
+		..\MemoryCache.Testing.NSubstitute.nuspec = ..\MemoryCache.Testing.NSubstitute.nuspec
 		MemoryCache.Testing.NSubstitute\MemoryCache.Testing.NSubstitute.xml = MemoryCache.Testing.NSubstitute\MemoryCache.Testing.NSubstitute.xml
 		..\README.md = ..\README.md
 		..\TODO.md = ..\TODO.md
@@ -32,6 +33,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCache.Testing.NSubstitute", "MemoryCache.Testing.NSubstitute\MemoryCache.Testing.NSubstitute.csproj", "{414C6F82-7B91-47E5-A9FC-30899B351B96}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCache.Testing.NSubstitute.Tests", "MemoryCache.Testing.NSubstitute.Tests\MemoryCache.Testing.NSubstitute.Tests.csproj", "{7DD5916B-8AFE-4D60-984B-B2DD34B415F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryCache.Testing.NSubstitute.PackageVerification.Tests", "MemoryCache.Testing.NSubstitute.PackageVerification.Tests\MemoryCache.Testing.NSubstitute.PackageVerification.Tests.csproj", "{14564B3E-5DC4-4511-BB49-E4225F8D9851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +70,10 @@ Global
 		{7DD5916B-8AFE-4D60-984B-B2DD34B415F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DD5916B-8AFE-4D60-984B-B2DD34B415F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DD5916B-8AFE-4D60-984B-B2DD34B415F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14564B3E-5DC4-4511-BB49-E4225F8D9851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14564B3E-5DC4-4511-BB49-E4225F8D9851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14564B3E-5DC4-4511-BB49-E4225F8D9851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14564B3E-5DC4-4511-BB49-E4225F8D9851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +83,7 @@ Global
 		{D0A3F73E-A164-4711-83BE-12A2F91E6329} = {362E2B67-8C6E-401B-9ECE-B251B145869D}
 		{EB8D7882-DCFE-4D3B-B872-6FEACF530849} = {5B404ED7-B1D0-4052-812B-0779E7CD97A0}
 		{7DD5916B-8AFE-4D60-984B-B2DD34B415F8} = {362E2B67-8C6E-401B-9ECE-B251B145869D}
+		{14564B3E-5DC4-4511-BB49-E4225F8D9851} = {5B404ED7-B1D0-4052-812B-0779E7CD97A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C21C18E-E656-4EF9-9FD0-60FFA2FDC4D7}
