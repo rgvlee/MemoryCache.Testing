@@ -83,7 +83,7 @@ The mock needs to know what to return. You'll need to either:
 The survey says, yes the async methods are supported. You're welcome.
 
 # NSubstitute
-I'm not going to go deep into NSubstitute usage as, well, it is the same except for one thing. For Moq, the MockFactory.CreateMemoryCacheMock() method returns a Mock\<T> containing the mocked object (Mock\<T>.Object). For NSubstitute you don't need to do that.
+I'm not going to go deep into NSubstitute usage as, well, it is the same except for one thing. For Moq, ```MockFactory.CreateCachingServiceMock()``` returns a Mock\<T> containing the mocked object (Mock\<T>.Object). For NSubstitute it returns (as you would expect) an IAppCache.
 
 ## Basic usage
 - Get a mocked lazy cache
