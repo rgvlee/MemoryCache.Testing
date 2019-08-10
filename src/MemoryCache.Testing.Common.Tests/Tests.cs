@@ -31,7 +31,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public async Task GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
             SetUpCacheEntry(cacheEntryKey, expectedResult);
@@ -51,7 +51,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
         
         [Test]
-        public void GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -63,7 +63,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 
@@ -75,7 +75,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public async Task GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
             
@@ -85,7 +85,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public async Task GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
             
@@ -95,7 +95,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public void GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults() {
+        public virtual void GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult1 = default(TestObject);
             var expectedResult2 = new TestObject();
@@ -117,7 +117,7 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public void GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults() {
+        public virtual void GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 

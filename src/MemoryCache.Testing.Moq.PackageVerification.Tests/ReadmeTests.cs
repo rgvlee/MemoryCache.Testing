@@ -14,7 +14,7 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests {
         }
 
         [Test]
-        public void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
 
@@ -26,7 +26,7 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests {
         }
 
         [Test]
-        public void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 

@@ -25,13 +25,13 @@ After my work on [LazyCache](https://github.com/rgvlee/LazyCache.Testing) I figu
 
 ```
 [Test]
-public void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = Guid.NewGuid().ToString();
 
     var mockedCache = MockFactory.CreateMockedMemoryCache();
-            
-    var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+
+    var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
     Assert.AreEqual(expectedResult, actualResult);
 }
@@ -42,15 +42,15 @@ No problem. Use the mock helper to create the mock. At this point it's a Mock\<I
 
 ```
 [Test]
-public void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
+public virtual void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = new TestObject();
 
     var cacheMock = MockFactory.CreateMemoryCacheMock();
     var mockedCache = cacheMock.Object;
 
-    var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
-	    
+    var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+
     Assert.AreEqual(expectedResult, actualResult);
 }
 ```
@@ -68,7 +68,7 @@ public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult() {
     cacheMock.SetUpCacheEntry(cacheEntryKey, expectedResult);
     var mockedCache = cacheMock.Object;
 
-    var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+    var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
     Assert.AreEqual(expectedResult, actualResult);
 }
@@ -90,13 +90,13 @@ I'm not going to go deep into NSubstitute usage as, well, it is the same except 
 - Consume
 ```
 [Test]
-public void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = Guid.NewGuid().ToString();
 
-    var mockedCache = MockFactory.CreateMemoryCacheMock();
+    var cacheMock = MockFactory.CreateMemoryCacheMock();
 
-    var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+    var actualResult = cacheMock.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
     Assert.AreEqual(expectedResult, actualResult);
 }
@@ -106,14 +106,14 @@ public void MinimumViableInterface_Guid_ReturnsExpectedResult() {
 Same same just with the explicit ```SetUpCacheEntry``` to set up the specified cache entry.
 ```
 [Test]
-public void GetOrAddWithSetUp_Guid_ReturnsExpectedResult() {
+public virtual void GetOrAddWithSetUp_Guid_ReturnsExpectedResult() {
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = Guid.NewGuid().ToString();
 
     var cacheMock = MockFactory.CreateMemoryCacheMock();
     cacheMock.SetUpCacheEntry(cacheEntryKey, expectedResult);
     
-    var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+    var actualResult = cacheMock.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
     Assert.AreEqual(expectedResult, actualResult);
 }
