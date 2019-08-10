@@ -17,7 +17,7 @@ namespace MemoryCache.Testing.Moq.Tests {
         public override void SetUp() {
             base.SetUp();
 
-            CacheMock = MockFactory.CreateCachingServiceMock();
+            CacheMock = MockFactory.CreateMemoryCacheMock();
             MockedCache = CacheMock.Object;
         }
     }
