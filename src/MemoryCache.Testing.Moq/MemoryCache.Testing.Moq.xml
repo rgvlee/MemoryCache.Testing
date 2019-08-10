@@ -33,16 +33,6 @@
             <param name="cacheEntryValue">The cache entry value.</param>
             <returns>The memory cache mock.</returns>
         </member>
-        <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntryCreate(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
-            <summary>
-            Sets up the CreateEntry method for a cache entry.
-            </summary>
-            <param name="memoryCacheMock">The memory cache mock instance.</param>
-            <param name="cacheEntryKey">The cache entry key.</param>
-            <param name="cacheEntryValue">The cache entry value.</param>
-            <returns>The memory cache mock.</returns>
-            <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)"/>.</remarks>
-        </member>
         <member name="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntryGet(Moq.Mock{Microsoft.Extensions.Caching.Memory.IMemoryCache},System.Object,System.Object)">
             <summary>
             Sets up the TryGetValue method for a cache entry.

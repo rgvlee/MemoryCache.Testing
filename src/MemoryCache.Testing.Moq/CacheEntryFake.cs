@@ -1,7 +1,8 @@
-﻿using System.Linq;
-using MemoryCache.Testing.Common.Extensions;
+﻿using MemoryCache.Testing.Common.Extensions;
+using MemoryCache.Testing.Common.Helpers;
 using MemoryCache.Testing.Moq.Extensions;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Moq;
 
 namespace MemoryCache.Testing.Moq {
@@ -9,6 +10,8 @@ namespace MemoryCache.Testing.Moq {
     /// A fake cache entry.
     /// </summary>
     public class CacheEntryFake : MemoryCache.Testing.Common.CacheEntryFake {
+        private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(CacheEntryFake));
+
         private readonly Mock<IMemoryCache> _memoryCacheMock;
 
         /// <summary>
@@ -26,9 +29,10 @@ namespace MemoryCache.Testing.Moq {
         public override object Value {
             get => _value;
             set {
+                Logger.LogDebug($"Setting _value to {value}");
                 _value = value;
                 _memoryCacheMock.SetUpCacheEntryGet(Key, _value);
-                _memoryCacheMock.SetUpCacheEntryRemove(Key, _value.GetType().GetDefaultValue());
+                _memoryCacheMock.SetUpCacheEntryRemove(Key, _value?.GetType().GetDefaultValue());
             }
         }
     }

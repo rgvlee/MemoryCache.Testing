@@ -19,9 +19,7 @@ namespace MemoryCache.Testing.Moq.Extensions {
         /// <param name="cacheEntryValue">The cache entry value.</param>
         /// <returns>The memory cache mock.</returns>
         public static Mock<IMemoryCache> SetUpCacheEntry(this Mock<IMemoryCache> memoryCacheMock, object cacheEntryKey, object cacheEntryValue) {
-            Logger.LogDebug($"Setting up cache entry for '{cacheEntryKey}' (type: {cacheEntryValue.GetType().Name}; value: '{cacheEntryValue.ToString()}')");
-
-            memoryCacheMock.SetUpCacheEntryCreate(cacheEntryKey, cacheEntryValue);
+            Logger.LogDebug($"Setting up cache entry for '{cacheEntryKey}' (type: {cacheEntryValue.GetType().Name}; value: '{cacheEntryValue}')");
 
             memoryCacheMock.SetUpCacheEntryGet(cacheEntryKey, cacheEntryValue);
 
@@ -29,27 +27,7 @@ namespace MemoryCache.Testing.Moq.Extensions {
 
             return memoryCacheMock;
         }
-
-        /// <summary>
-        /// Sets up the CreateEntry method for a cache entry.
-        /// </summary>
-        /// <param name="memoryCacheMock">The memory cache mock instance.</param>
-        /// <param name="cacheEntryKey">The cache entry key.</param>
-        /// <param name="cacheEntryValue">The cache entry value.</param>
-        /// <returns>The memory cache mock.</returns>
-        /// <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry"/>.</remarks>
-        public static Mock<IMemoryCache> SetUpCacheEntryCreate(this Mock<IMemoryCache> memoryCacheMock, object cacheEntryKey, object cacheEntryValue) {
-            Logger.LogDebug($"Setting up cache entry Create for '{cacheEntryKey}' (type: {cacheEntryValue.GetType().Name}; value: '{cacheEntryValue.ToString()}')");
-
-            var cacheEntryFake = new CacheEntryFake(cacheEntryKey, memoryCacheMock);
-
-            memoryCacheMock.Setup(m => m.CreateEntry(It.Is<object>(k => k.Equals(cacheEntryKey))))
-                .Callback(() => Logger.LogDebug("Cache CreateEntry invoked"))
-                .Returns(() => cacheEntryFake);
-
-            return memoryCacheMock;
-        }
-
+        
         /// <summary>
         /// Sets up the TryGetValue method for a cache entry.
         /// </summary>
@@ -77,7 +55,7 @@ namespace MemoryCache.Testing.Moq.Extensions {
         /// <returns>The memory cache mock.</returns>
         /// <remarks>I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry"/>.</remarks>
         public static Mock<IMemoryCache> SetUpCacheEntryRemove(this Mock<IMemoryCache> memoryCacheMock, object cacheEntryKey, object defaultValue) {
-            Logger.LogDebug($"Setting up cache entry Remove for '{cacheEntryKey}' (default value: {defaultValue?.ToString() ?? "null"})");
+            Logger.LogDebug($"Setting up cache entry Remove for '{cacheEntryKey}' (default value: {defaultValue})");
 
             memoryCacheMock.Setup(m => m.Remove(It.Is<object>(k => k.Equals(cacheEntryKey))))
                 .Callback(() => {
