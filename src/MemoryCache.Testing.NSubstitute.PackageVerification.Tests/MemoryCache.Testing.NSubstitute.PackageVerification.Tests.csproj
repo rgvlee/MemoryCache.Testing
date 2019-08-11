@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\MemoryCache.Testing.Common.Tests\TestObject.cs" Link="TestObject.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MemoryCache.Testing.NSubstitute" Version="0.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
     <PackageReference Include="nunit" Version="3.12.0" />

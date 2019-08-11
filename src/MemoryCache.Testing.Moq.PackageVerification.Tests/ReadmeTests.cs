@@ -1,4 +1,5 @@
 using MemoryCache.Testing.Common.Helpers;
+using MemoryCache.Testing.Common.Tests;
 using MemoryCache.Testing.Moq.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
