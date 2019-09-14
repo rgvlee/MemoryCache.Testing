@@ -40,13 +40,13 @@ public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
 ## But I want the cache mock
 No problem. Use Mock.Get(mockedCache) to get the cache mock.
 
-## Let's get explicit
-If you want to explicitly specify a cache entry set up use the following extension method.
-
 ## I'm using Get\<T>, what do I need to do?
 The mock needs to know what to return. You'll need to either:
 - Populate the cache using Set\<T>, GetOrCreate\<T> or GetOrCreateAsync\<T>; or
-- Use the explicit set up as described above.
+- Use the explicit set up as described below.
+
+## Let's get explicit
+If you want to explicitly specify a cache entry set up use the following extension method.
 
 ```
 [Test]
