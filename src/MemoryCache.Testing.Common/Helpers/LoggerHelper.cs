@@ -1,15 +1,15 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
+using Microsoft.Extensions.Logging;
 
 namespace MemoryCache.Testing.Common.Helpers {
     /// <summary>
-    /// Helper for creating logger instances.
+    ///     Helper for creating logger instances.
     /// </summary>
     public static class LoggerHelper {
         private static ILoggerFactory _factory;
-        
+
         /// <summary>
-        /// Gets or sets the logger factory.
+        ///     Gets or sets the logger factory.
         /// </summary>
         public static ILoggerFactory LoggerFactory {
             get => _factory ?? (_factory = new LoggerFactory());
@@ -17,24 +17,30 @@ namespace MemoryCache.Testing.Common.Helpers {
         }
 
         /// <summary>
-        /// Creates a new ILogger instance using the full name of the specified type.
+        ///     Creates a new ILogger instance using the full name of the specified type.
         /// </summary>
         /// <typeparam name="T">The type.</typeparam>
-        /// <returns>A new <see cref="ILogger{T}"/> instance.</returns>
-        public static ILogger<T> CreateLogger<T>() => LoggerFactory.CreateLogger<T>();
+        /// <returns>A new <see cref="ILogger{T}" /> instance.</returns>
+        public static ILogger<T> CreateLogger<T>() {
+            return LoggerFactory.CreateLogger<T>();
+        }
 
         /// <summary>
-        /// Creates a new <see cref="ILogger"/> instance.
+        ///     Creates a new <see cref="ILogger" /> instance.
         /// </summary>
         /// <param name="categoryName">The category name for messages produced by the logger.</param>
-        /// <returns>A new <see cref="ILogger"/> instance.</returns>
-        public static ILogger CreateLogger(string categoryName) => LoggerFactory.CreateLogger(categoryName);
+        /// <returns>A new <see cref="ILogger" /> instance.</returns>
+        public static ILogger CreateLogger(string categoryName) {
+            return LoggerFactory.CreateLogger(categoryName);
+        }
 
         /// <summary>
-        /// Creates a new ILogger instance using the full name of the specified type.
+        ///     Creates a new ILogger instance using the full name of the specified type.
         /// </summary>
         /// <param name="type">The type.</param>
-        /// <returns>A new <see cref="ILogger"/> instance.</returns>
-        public static ILogger CreateLogger(Type type) => LoggerFactory.CreateLogger(type);
+        /// <returns>A new <see cref="ILogger" /> instance.</returns>
+        public static ILogger CreateLogger(Type type) {
+            return LoggerFactory.CreateLogger(type);
+        }
     }
 }

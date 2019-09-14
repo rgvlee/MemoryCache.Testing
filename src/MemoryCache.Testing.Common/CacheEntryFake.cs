@@ -1,19 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 
 namespace MemoryCache.Testing.Common {
     /// <summary>
-    /// A fake cache entry.
+    ///     A fake cache entry.
     /// </summary>
     public class CacheEntryFake : ICacheEntry {
+        public static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(CacheEntryFake));
+
+        protected readonly IMemoryCache MockedMemoryCache;
+
         /// <summary>
-        /// Constructor.
+        ///     Constructor.
         /// </summary>
         /// <param name="key">The cache entry key.</param>
         public CacheEntryFake(object key) {
             Key = key;
+        }
+
+        /// <summary>
+        ///     Constructor.
+        /// </summary>
+        /// <param name="key">The cache entry key.</param>
+        /// <param name="mockedMemoryCache">The mocked memory cache instance.</param>
+        public CacheEntryFake(object key, IMemoryCache mockedMemoryCache) : this(key) {
+            MockedMemoryCache = mockedMemoryCache;
         }
 
         /// <inheritdoc />
