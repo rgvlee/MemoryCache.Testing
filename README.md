@@ -46,7 +46,7 @@ The mock needs to know what to return. You'll need to either:
 - Use the explicit set up as described below.
 
 ## Let's get explicit
-If you want to explicitly specify a cache entry set up use the following extension method.
+If you want to explicitly set up a cache entry use the following extension method:
 
 ```
 [Test]
