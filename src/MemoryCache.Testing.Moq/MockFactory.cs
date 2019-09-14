@@ -17,13 +17,7 @@ namespace MemoryCache.Testing.Moq {
         /// </summary>
         /// <returns>A memory cache mock.</returns>
         public static Mock<IMemoryCache> CreateMemoryCacheMock() {
-            var mock = new Mock<IMemoryCache>();
-
-            mock.Setup(m => m.CreateEntry(It.IsAny<object>()))
-                .Callback((object key) => { Logger.LogDebug("Cache CreateEntry invoked"); })
-                .Returns((object key) => new CacheEntryFake(key, mock.Object));
-
-            return mock;
+            return Mock.Get(Create.MockedMemoryCache());
         }
 
         /// <summary>
@@ -31,7 +25,7 @@ namespace MemoryCache.Testing.Moq {
         /// </summary>
         /// <returns>A mocked memory cache.</returns>
         public static IMemoryCache CreateMockedMemoryCache() {
-            return CreateMemoryCacheMock().Object;
+            return Create.MockedMemoryCache();
         }
     }
 }
