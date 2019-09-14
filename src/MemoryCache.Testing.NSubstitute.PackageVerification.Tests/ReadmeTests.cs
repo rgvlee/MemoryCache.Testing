@@ -1,9 +1,9 @@
+using System;
 using MemoryCache.Testing.Common.Helpers;
 using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NUnit.Framework;
-using System;
 
 namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests {
     [TestFixture]
@@ -14,26 +14,26 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests {
         }
 
         [Test]
-        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
-            var expectedResult = Guid.NewGuid().ToString();
+            var expectedResult = Guid.NewGuid();
 
-            var cacheMock = MockFactory.CreateMemoryCacheMock();
+            var mockedCache = Create.MockedMemoryCache();
+            mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
 
-            var actualResult = cacheMock.GetOrCreate(cacheEntryKey, entry => expectedResult);
+            var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
             Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
-        public virtual void GetOrAddWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
 
-            var cacheMock = MockFactory.CreateMemoryCacheMock();
-            cacheMock.SetUpCacheEntry(cacheEntryKey, expectedResult);
+            var mockedCache = Create.MockedMemoryCache();
 
-            var actualResult = cacheMock.GetOrCreate(cacheEntryKey, entry => expectedResult);
+            var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
             Assert.AreEqual(expectedResult, actualResult);
         }
