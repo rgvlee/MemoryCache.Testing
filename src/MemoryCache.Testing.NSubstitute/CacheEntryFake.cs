@@ -8,10 +8,13 @@ namespace MemoryCache.Testing.NSubstitute {
     public class CacheEntryFake : Common.CacheEntryFake {
         private object _value;
 
+        /// <inheritdoc />
         public CacheEntryFake(object key) : base(key) { }
 
+        /// <inheritdoc />
         public CacheEntryFake(object key, IMemoryCache mockedMemoryCache) : base(key, mockedMemoryCache) { }
 
+        /// <inheritdoc />
         public override object Value {
             get => _value;
             set {
