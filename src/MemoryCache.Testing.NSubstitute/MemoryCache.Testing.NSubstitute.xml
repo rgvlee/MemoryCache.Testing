@@ -1,83 +1,80 @@
 <?xml version="1.0"?>
-
 <doc>
-  <assembly>
-    <name>MemoryCache.Testing.NSubstitute</name>
-  </assembly>
-  <members>
-    <member name="T:MemoryCache.Testing.NSubstitute.CacheEntryFake">
-      <summary>
-        A fake cache entry.
-      </summary>
-    </member>
-    <member
-      name="M:MemoryCache.Testing.NSubstitute.CacheEntryFake.#ctor(System.Object,Microsoft.Extensions.Caching.Memory.IMemoryCache)">
-      <summary>
-        Constructor.
-      </summary>
-      <param name="key">The cache entry key.</param>
-      <param name="memoryCacheMock">The memory cache mock instance.</param>
-    </member>
-    <member name="P:MemoryCache.Testing.NSubstitute.CacheEntryFake.Value">
-      <inheritdoc />
-    </member>
-    <member name="T:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions">
-      <summary>
-        Extensions for mocks.
-      </summary>
-    </member>
-    <member
-      name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
-      <summary>
-        Sets up a cache entry.
-      </summary>
-      <param name="memoryCacheMock">The memory cache mock instance.</param>
-      <param name="cacheEntryKey">The cache entry key.</param>
-      <param name="cacheEntryValue">The cache entry value.</param>
-      <returns>The memory cache mock.</returns>
-    </member>
-    <member
-      name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntryGet(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
-      <summary>
-        Sets up the TryGetValue method for a cache entry.
-      </summary>
-      <param name="memoryCacheMock">The memory cache mock instance.</param>
-      <param name="cacheEntryKey">The cache entry key.</param>
-      <param name="cacheEntryValue">The cache entry value.</param>
-      <returns>The memory cache mock.</returns>
-      <remarks>
-        I've left this accessible for advanced usage. In most cases you should just use
-        <see
-          cref="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)" />
-        .
-      </remarks>
-    </member>
-    <member
-      name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntryRemove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
-      <summary>
-        Sets up the Remove method for a cache entry.
-      </summary>
-      <param name="memoryCacheMock">The memory cache mock instance.</param>
-      <param name="cacheEntryKey">The cache entry key.</param>
-      <param name="defaultValue">The default value (e.g., default(T)) for the cache entry value.</param>
-      <returns>The memory cache mock.</returns>
-      <remarks>
-        I've left this accessible for advanced usage. In most cases you should just use
-        <see
-          cref="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)" />
-        .
-      </remarks>
-    </member>
-    <member name="T:MemoryCache.Testing.NSubstitute.MockFactory">
-      <summary>
-        Factory for creating mock/mocked instances.
-      </summary>
-    </member>
-    <member name="M:MemoryCache.Testing.NSubstitute.MockFactory.CreateMemoryCacheMock">
-      <summary>
-        Creates a memory cache mock.
-      </summary>
-      <returns>A memory cache mock.</returns>
-    </member>
-  </members>
+    <assembly>
+        <name>MemoryCache.Testing.NSubstitute</name>
+    </assembly>
+    <members>
+        <member name="T:MemoryCache.Testing.NSubstitute.CacheEntryFake">
+            <inheritdoc />
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.CacheEntryFake.#ctor(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.CacheEntryFake.#ctor(System.Object,Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <inheritdoc />
+        </member>
+        <member name="P:MemoryCache.Testing.NSubstitute.CacheEntryFake.Value">
+            <inheritdoc />
+        </member>
+        <member name="T:MemoryCache.Testing.NSubstitute.Create">
+            <summary>
+                Factory for creating mock/mocked instances.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.Create.MockedMemoryCache">
+            <summary>
+                Creates a mocked memory cache.
+            </summary>
+            <returns>A mocked memory cache.</returns>
+        </member>
+        <member name="T:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions">
+            <summary>
+                Extensions for mocks.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
+            <summary>
+                Sets up a cache entry.
+            </summary>
+            <param name="mockedMemoryCache">The mocked memory cache.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="cacheEntryValue">The cache entry value.</param>
+            <returns>The mocked memory cache.</returns>
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntryGet(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
+            <summary>
+                Sets up the TryGetValue method for a cache entry.
+            </summary>
+            <param name="mockedMemoryCache">The mocked memory cache.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="cacheEntryValue">The cache entry value.</param>
+            <returns>The mocked memory cache.</returns>
+            <remarks>
+                I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)" />.
+            </remarks>
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntryRemove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)">
+            <summary>
+                Sets up the Remove method for a cache entry.
+            </summary>
+            <param name="mockedMemoryCache">The mocked memory cache.</param>
+            <param name="cacheEntryKey">The cache entry key.</param>
+            <param name="defaultValue">The default value (e.g., default(T)) for the cache entry value.</param>
+            <returns>The mocked memory cache.</returns>
+            <remarks>
+                I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.NSubstitute.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)" />.
+            </remarks>
+        </member>
+        <member name="T:MemoryCache.Testing.NSubstitute.MockFactory">
+            <summary>
+                Factory for creating mock/mocked instances.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.NSubstitute.MockFactory.CreateMemoryCacheMock">
+            <summary>
+                Creates a memory cache mock.
+            </summary>
+            <returns>A memory cache mock.</returns>
+        </member>
+    </members>
 </doc>

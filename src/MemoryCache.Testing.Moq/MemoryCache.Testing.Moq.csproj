@@ -18,6 +18,10 @@
     <DocumentationFile>MemoryCache.Testing.Moq.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>MemoryCache.Testing.Moq.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Moq" Version="4.9.0" />
   </ItemGroup>

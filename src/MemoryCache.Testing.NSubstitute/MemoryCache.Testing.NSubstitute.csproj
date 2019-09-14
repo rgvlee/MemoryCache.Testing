@@ -18,6 +18,10 @@
     <DocumentationFile>MemoryCache.Testing.NSubstitute.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>MemoryCache.Testing.NSubstitute.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="NSubstitute" Version="4.1.0" />
   </ItemGroup>
