@@ -25,7 +25,8 @@ After my work on [LazyCache](https://github.com/rgvlee/LazyCache.Testing) I figu
 
 ```
 [Test]
-public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult()
+{
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = Guid.NewGuid().ToString();
 
@@ -50,13 +51,14 @@ If you want to explicitly set up a cache entry use the following extension metho
 
 ```
 [Test]
-public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult() {
+public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
+{
     var cacheEntryKey = "SomethingInTheCache";
     var expectedResult = Guid.NewGuid();
 
     var mockedCache = Create.MockedMemoryCache();
     mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
-    
+
     var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
     Assert.AreEqual(expectedResult, actualResult);
