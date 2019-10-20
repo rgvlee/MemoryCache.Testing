@@ -19,6 +19,8 @@ namespace MemoryCache.Testing.Common {
         /// </summary>
         /// <param name="key">The cache entry key.</param>
         public CacheEntryFake(object key) {
+            EnsureArgument.IsNotNull(key, nameof(key));
+
             Key = key;
         }
 
@@ -28,6 +30,9 @@ namespace MemoryCache.Testing.Common {
         /// <param name="key">The cache entry key.</param>
         /// <param name="mockedMemoryCache">The mocked memory cache instance.</param>
         public CacheEntryFake(object key, IMemoryCache mockedMemoryCache) : this(key) {
+            EnsureArgument.IsNotNull(key, nameof(key));
+            EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
+
             MockedMemoryCache = mockedMemoryCache;
         }
 

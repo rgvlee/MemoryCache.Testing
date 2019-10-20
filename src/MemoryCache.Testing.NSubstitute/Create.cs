@@ -5,7 +5,7 @@ using NSubstitute;
 
 namespace MemoryCache.Testing.NSubstitute {
     /// <summary>
-    ///     Factory for creating mock/mocked instances.
+    /// Factory for creating mocked instances.
     /// </summary>
     public class Create {
         private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(Create));

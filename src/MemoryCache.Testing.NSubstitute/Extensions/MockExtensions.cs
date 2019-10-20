@@ -1,4 +1,5 @@
-﻿using MemoryCache.Testing.Common.Extensions;
+﻿using MemoryCache.Testing.Common;
+using MemoryCache.Testing.Common.Extensions;
 using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
@@ -19,6 +20,9 @@ namespace MemoryCache.Testing.NSubstitute.Extensions {
         /// <param name="cacheEntryValue">The cache entry value.</param>
         /// <returns>The mocked memory cache.</returns>
         public static IMemoryCache SetUpCacheEntry(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue) {
+            EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
+            EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
+
             Logger.LogDebug($"Setting up cache entry for '{cacheEntryKey}' (type: {cacheEntryValue.GetType().Name}; value: '{cacheEntryValue}')");
 
             mockedMemoryCache.SetUpCacheEntryGet(cacheEntryKey, cacheEntryValue);
@@ -39,6 +43,9 @@ namespace MemoryCache.Testing.NSubstitute.Extensions {
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
         public static IMemoryCache SetUpCacheEntryGet(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue) {
+            EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
+            EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
+
             Logger.LogDebug($"Setting up cache entry Get for '{cacheEntryKey}'");
 
             mockedMemoryCache.TryGetValue(Arg.Is<object>(k => k.Equals(cacheEntryKey)), out Arg.Any<object>())
@@ -62,6 +69,9 @@ namespace MemoryCache.Testing.NSubstitute.Extensions {
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
         public static IMemoryCache SetUpCacheEntryRemove(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object defaultValue) {
+            EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
+            EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
+
             Logger.LogDebug($"Setting up cache entry Remove for '{cacheEntryKey}' (default value: {defaultValue})");
 
             mockedMemoryCache.When(x => x.Remove(Arg.Is<object>(k => k.Equals(cacheEntryKey))))
