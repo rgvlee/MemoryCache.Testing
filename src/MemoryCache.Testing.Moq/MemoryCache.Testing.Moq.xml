@@ -18,7 +18,7 @@
         </member>
         <member name="T:MemoryCache.Testing.Moq.Create">
             <summary>
-                Factory for creating mock/mocked instances.
+                Factory for creating mocked instances.
             </summary>
         </member>
         <member name="M:MemoryCache.Testing.Moq.Create.MockedMemoryCache">
@@ -64,23 +64,6 @@
             <remarks>
                 I've left this accessible for advanced usage. In most cases you should just use <see cref="M:MemoryCache.Testing.Moq.Extensions.MockExtensions.SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object)" />.
             </remarks>
-        </member>
-        <member name="T:MemoryCache.Testing.Moq.MockFactory">
-            <summary>
-                Factory for creating mock/mocked instances.
-            </summary>
-        </member>
-        <member name="M:MemoryCache.Testing.Moq.MockFactory.CreateMemoryCacheMock">
-            <summary>
-                Creates a memory cache mock.
-            </summary>
-            <returns>A memory cache mock.</returns>
-        </member>
-        <member name="M:MemoryCache.Testing.Moq.MockFactory.CreateMockedMemoryCache">
-            <summary>
-                Creates a mocked memory cache.
-            </summary>
-            <returns>A mocked memory cache.</returns>
         </member>
     </members>
 </doc>

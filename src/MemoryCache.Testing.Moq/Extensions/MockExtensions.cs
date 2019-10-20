@@ -5,11 +5,13 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Moq;
 
-namespace MemoryCache.Testing.Moq.Extensions {
+namespace MemoryCache.Testing.Moq.Extensions
+{
     /// <summary>
     ///     Extensions for mocks.
     /// </summary>
-    public static class MockExtensions {
+    public static class MockExtensions
+    {
         private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(MockExtensions));
 
         /// <summary>
@@ -19,7 +21,8 @@ namespace MemoryCache.Testing.Moq.Extensions {
         /// <param name="cacheEntryKey">The cache entry key.</param>
         /// <param name="cacheEntryValue">The cache entry value.</param>
         /// <returns>The mocked memory cache.</returns>
-        public static IMemoryCache SetUpCacheEntry(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue) {
+        public static IMemoryCache SetUpCacheEntry(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue)
+        {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
             EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
 
@@ -42,7 +45,8 @@ namespace MemoryCache.Testing.Moq.Extensions {
         /// <remarks>
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
-        public static IMemoryCache SetUpCacheEntryGet(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue) {
+        public static IMemoryCache SetUpCacheEntryGet(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue)
+        {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
             EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
 
@@ -65,14 +69,16 @@ namespace MemoryCache.Testing.Moq.Extensions {
         /// <remarks>
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
-        public static IMemoryCache SetUpCacheEntryRemove(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object defaultValue) {
+        public static IMemoryCache SetUpCacheEntryRemove(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object defaultValue)
+        {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
             EnsureArgument.IsNotNull(cacheEntryKey, nameof(cacheEntryKey));
 
             Logger.LogDebug($"Setting up cache entry Remove for '{cacheEntryKey}' (default value: {defaultValue})");
 
             Mock.Get(mockedMemoryCache).Setup(m => m.Remove(It.Is<object>(k => k.Equals(cacheEntryKey))))
-                .Callback(() => {
+                .Callback(() =>
+                {
                     Logger.LogDebug("Cache Remove invoked");
                     mockedMemoryCache.SetUpCacheEntryGet(cacheEntryKey, defaultValue);
                 });

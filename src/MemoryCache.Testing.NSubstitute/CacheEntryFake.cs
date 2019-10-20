@@ -3,9 +3,11 @@ using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
-namespace MemoryCache.Testing.NSubstitute {
+namespace MemoryCache.Testing.NSubstitute
+{
     /// <inheritdoc />
-    public class CacheEntryFake : Common.CacheEntryFake {
+    public class CacheEntryFake : Common.CacheEntryFake
+    {
         private object _value;
 
         /// <inheritdoc />
@@ -17,7 +19,8 @@ namespace MemoryCache.Testing.NSubstitute {
         /// <inheritdoc />
         public override object Value {
             get => _value;
-            set {
+            set
+            {
                 Logger.LogDebug($"Setting _value to {value}");
                 _value = value;
                 MockedMemoryCache.SetUpCacheEntryGet(Key, _value);

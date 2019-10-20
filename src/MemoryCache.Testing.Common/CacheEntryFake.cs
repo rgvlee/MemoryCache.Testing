@@ -5,11 +5,13 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 
-namespace MemoryCache.Testing.Common {
+namespace MemoryCache.Testing.Common
+{
     /// <summary>
     ///     A fake cache entry.
     /// </summary>
-    public class CacheEntryFake : ICacheEntry {
+    public class CacheEntryFake : ICacheEntry
+    {
         public static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(CacheEntryFake));
 
         protected readonly IMemoryCache MockedMemoryCache;
@@ -18,7 +20,8 @@ namespace MemoryCache.Testing.Common {
         ///     Constructor.
         /// </summary>
         /// <param name="key">The cache entry key.</param>
-        public CacheEntryFake(object key) {
+        public CacheEntryFake(object key)
+        {
             EnsureArgument.IsNotNull(key, nameof(key));
 
             Key = key;
@@ -29,7 +32,8 @@ namespace MemoryCache.Testing.Common {
         /// </summary>
         /// <param name="key">The cache entry key.</param>
         /// <param name="mockedMemoryCache">The mocked memory cache instance.</param>
-        public CacheEntryFake(object key, IMemoryCache mockedMemoryCache) : this(key) {
+        public CacheEntryFake(object key, IMemoryCache mockedMemoryCache) : this(key)
+        {
             EnsureArgument.IsNotNull(key, nameof(key));
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
 
@@ -37,7 +41,8 @@ namespace MemoryCache.Testing.Common {
         }
 
         /// <inheritdoc />
-        public void Dispose() {
+        public void Dispose()
+        {
             //throw new NotImplementedException();
         }
 

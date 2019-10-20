@@ -5,11 +5,14 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NUnit.Framework;
 
-namespace MemoryCache.Testing.Common.Tests {
+namespace MemoryCache.Testing.Common.Tests
+{
     [TestFixture]
-    public abstract class TestBase {
+    public abstract class TestBase
+    {
         [SetUp]
-        public virtual void SetUp() {
+        public virtual void SetUp()
+        {
             LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
         }
 
@@ -20,18 +23,21 @@ namespace MemoryCache.Testing.Common.Tests {
         protected abstract void SetUpCacheEntry<T>(string cacheEntryKey, T expectedResult);
 
         [Test]
-        public virtual void AddNullValue_TestObject_DoesNotThrowException() {
+        public virtual void AddNullValue_TestObject_DoesNotThrowException()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = default(TestObject);
 
-            Assert.DoesNotThrow(() => {
+            Assert.DoesNotThrow(() =>
+            {
                 MockedCache.Set(cacheEntryKey, expectedResult);
                 var actualResult = MockedCache.Get<TestObject>(cacheEntryKey);
             });
         }
 
         [Test]
-        public virtual void AddThenGetWithNoSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void AddThenGetWithNoSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -44,7 +50,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void AddThenGetWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual void AddThenGetWithNoSetUp_TestObject_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 
@@ -56,7 +63,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void AddThenGetWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void AddThenGetWithSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult1 = Guid.NewGuid();
             var expectedResult2 = Guid.NewGuid();
@@ -73,7 +81,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual async Task GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -83,7 +92,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual async Task GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 
@@ -93,7 +103,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual async Task GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual async Task GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
             SetUpCacheEntry(cacheEntryKey, expectedResult);
@@ -104,7 +115,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue() {
+        public virtual void GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult1 = Guid.NewGuid();
 
@@ -112,14 +124,16 @@ namespace MemoryCache.Testing.Common.Tests {
             MockedCache.Remove(cacheEntryKey);
             var actualResult2 = MockedCache.Get<Guid>(cacheEntryKey);
 
-            Assert.Multiple(() => {
+            Assert.Multiple(() =>
+            {
                 Assert.That(actualResult1, Is.EqualTo(expectedResult1));
                 Assert.That(actualResult2, Is.EqualTo(default(Guid)));
             });
         }
 
         [Test]
-        public virtual void GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -129,7 +143,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 
@@ -139,7 +154,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
             SetUpCacheEntry(cacheEntryKey, expectedResult);
@@ -150,7 +166,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults() {
+        public virtual void GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult1 = default(TestObject);
             var expectedResult2 = new TestObject();
@@ -160,7 +177,8 @@ namespace MemoryCache.Testing.Common.Tests {
             var actualResult2 = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult2);
             var actualResult3 = MockedCache.Get<TestObject>(cacheEntryKey);
 
-            Assert.Multiple(() => {
+            Assert.Multiple(() =>
+            {
                 Assert.IsNull(actualResult1);
                 Assert.AreEqual(expectedResult1, actualResult1);
 
@@ -172,7 +190,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults() {
+        public virtual void GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = new TestObject();
 
@@ -182,7 +201,8 @@ namespace MemoryCache.Testing.Common.Tests {
             var actualResult2 = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
             var actualResult3 = MockedCache.Get<TestObject>(cacheEntryKey);
 
-            Assert.Multiple(() => {
+            Assert.Multiple(() =>
+            {
                 Assert.AreEqual(expectedResult, actualResult1);
                 Assert.AreEqual(expectedResult, actualResult2);
                 Assert.AreEqual(expectedResult, actualResult3);
@@ -190,7 +210,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void GetWithNoSetUp_ReturnsDefaultValue() {
+        public virtual void GetWithNoSetUp_ReturnsDefaultValue()
+        {
             var cacheEntryKey = "SomethingInTheCache";
 
             var actualResult = MockedCache.Get<Guid>(cacheEntryKey);
@@ -199,7 +220,8 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -209,28 +231,32 @@ namespace MemoryCache.Testing.Common.Tests {
         }
 
         [Test]
-        public virtual void RemoveWithNoSetUp_DoesNothing() {
+        public virtual void RemoveWithNoSetUp_DoesNothing()
+        {
             var cacheEntryKey = "SomethingInTheCache";
 
             Assert.DoesNotThrow(() => { MockedCache.Remove(cacheEntryKey); });
         }
 
         [Test]
-        public virtual void RemoveWithNoSetUp_Guid_ReturnsDefaultValue() {
+        public virtual void RemoveWithNoSetUp_Guid_ReturnsDefaultValue()
+        {
             var cacheEntryKey = "SomethingInTheCache";
 
             var actualResult1 = MockedCache.Get<Guid>(cacheEntryKey);
             MockedCache.Remove(cacheEntryKey);
             var actualResult2 = MockedCache.Get<Guid>(cacheEntryKey);
 
-            Assert.Multiple(() => {
+            Assert.Multiple(() =>
+            {
                 Assert.That(actualResult1, Is.EqualTo(default(Guid)));
                 Assert.That(actualResult2, Is.EqualTo(default(Guid)));
             });
         }
 
         [Test]
-        public virtual void RemoveWithSetUp_Guid_ReturnsDefaultValue() {
+        public virtual void RemoveWithSetUp_Guid_ReturnsDefaultValue()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult1 = Guid.NewGuid();
 
@@ -240,7 +266,8 @@ namespace MemoryCache.Testing.Common.Tests {
             MockedCache.Remove(cacheEntryKey);
             var actualResult2 = MockedCache.Get<Guid>(cacheEntryKey);
 
-            Assert.Multiple(() => {
+            Assert.Multiple(() =>
+            {
                 Assert.AreEqual(expectedResult1, actualResult1);
                 Assert.That(actualResult2, Is.EqualTo(default(Guid)));
             });

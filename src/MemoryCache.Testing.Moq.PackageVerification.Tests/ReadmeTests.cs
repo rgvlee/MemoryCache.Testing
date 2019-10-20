@@ -5,16 +5,20 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NUnit.Framework;
 
-namespace MemoryCache.Testing.Moq.PackageVerification.Tests {
+namespace MemoryCache.Testing.Moq.PackageVerification.Tests
+{
     [TestFixture]
-    public class Tests {
+    public class Tests
+    {
         [SetUp]
-        public virtual void SetUp() {
+        public virtual void SetUp()
+        {
             LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
         }
 
         [Test]
-        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult() {
+        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid();
 
@@ -27,7 +31,8 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests {
         }
 
         [Test]
-        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult() {
+        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult()
+        {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
 
