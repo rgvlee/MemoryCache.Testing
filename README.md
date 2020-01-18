@@ -18,7 +18,7 @@ Some of the features include:
 ## The disclaimer
 After my work on [LazyCache](https://github.com/rgvlee/LazyCache.Testing) I figured why not do the same thing for Microsoft.Extensions.Caching.Memory.MemoryCache/IMemoryCache.
 
-If you find these libraries useful and something is missing, not working as you'd expect or you need additional behaviour mocked, flick me a message and I'll see what I can do.
+If you find these libraries useful and something is missing, not working as you'd expect, or you need additional behaviour mocked, flick me a message and I'll see what I can do.
 
 # Moq
 ## Basic usage
