@@ -68,7 +68,7 @@ public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
 ```
 
 ## Are the async methods supported?
-The survey says, yes the async methods are supported.
+Yes.
 
 # NSubstitute
 It works the same/has the same interface. The only difference is if you want to cache mock. For Moq you need to invoke `Mock.Get(mockedCache)` to get it. For NSubstitute you don't need to do this.
