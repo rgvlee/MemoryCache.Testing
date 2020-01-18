@@ -1,5 +1,5 @@
 # MemoryCache.Testing
-__*Moq and NSubstitute mocking libraries for Microsoft.Extensions.Caching.Memory.MemoryCache/Microsoft.Extensions.Caching.Memory.IMemoryCache*__
+__*Moq and NSubstitute mocking libraries for Microsoft.Extensions.Caching.Memory.MemoryCache/IMemoryCache*__
 
 ## The cache experience
 MemoryCache.Testing.Moq and MemoryCache.Testing.NSubstitute are more than just a few mock set ups. They mock the memory cache as a whole.
@@ -16,7 +16,7 @@ Some of the features include:
 - [MemoryCache.Testing.NSubstitute - NuGet](https://www.nuget.org/packages/MemoryCache.Testing.NSubstitute/)
 
 ## The disclaimer
-After my work on [LazyCache](https://github.com/rgvlee/LazyCache.Testing) I figured why not do the same thing for IMemoryCache.
+After my work on [LazyCache](https://github.com/rgvlee/LazyCache.Testing) I figured why not do the same thing for Microsoft.Extensions.Caching.Memory.MemoryCache/IMemoryCache.
 
 If you find these libraries useful and something is missing, not working as you'd expect or you need additional behaviour mocked, flick me a message and I'll see what I can do.
 
