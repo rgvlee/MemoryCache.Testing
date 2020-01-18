@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
 {
     [TestFixture]
-    public class Tests
+    public class ReadmeTests
     {
         [SetUp]
         public virtual void SetUp()
@@ -20,7 +20,7 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
         public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
         {
             var cacheEntryKey = "SomethingInTheCache";
-            var expectedResult = Guid.NewGuid();
+            var expectedResult = Guid.NewGuid().ToString();
 
             var mockedCache = Create.MockedMemoryCache();
             mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
