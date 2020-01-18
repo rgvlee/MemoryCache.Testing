@@ -1,5 +1,5 @@
 # MemoryCache.Testing
-__*Moq and NSubstitute mocking libraries for Microsoft.Extensions.Caching.Memory.IMemoryCache*__
+__*Moq and NSubstitute mocking libraries for Microsoft.Extensions.Caching.Memory.MemoryCache/Microsoft.Extensions.Caching.Memory.IMemoryCache*__
 
 ## The cache experience
 MemoryCache.Testing.Moq and MemoryCache.Testing.NSubstitute are more than just a few mock set ups. They mock the memory cache as a whole.
