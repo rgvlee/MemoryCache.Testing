@@ -1,5 +1,7 @@
 # MemoryCache.Testing
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rgvlee/MemoryCache.Testing&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&utm_medium=referral&utm_content=rgvlee/MemoryCache.Testing&utm_campaign=Badge_Coverage)
+
 __*A functional system mock of the Microsoft.Extensions.Caching.Memory.IMemoryCache interface using Moq and NSubstitute*__
 
 ## Overview
