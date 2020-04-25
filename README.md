@@ -22,7 +22,7 @@ The intent of this library is to provide a system mock of the Microsoft.Extensio
 
 Start by creating a mocked memory cache using `Create.MockedMemoryCache()`:
 
-``` C#
+```c#
 var cacheEntryKey = "SomethingInTheCache";
 var expectedResult = Guid.NewGuid().ToString();
 
@@ -35,7 +35,7 @@ Assert.AreEqual(expectedResult, actualResult);
 
 Provided your SUT populates the cache that'd be all you need to do. If it doesn't, or you like your arrange to be verbose, use `SetUpCacheEntry<T>` to set up a cache entry:
 
-``` C#
+```c#
 var cacheEntryKey = "SomethingInTheCache";
 var expectedResult = Guid.NewGuid().ToString();
 
@@ -49,7 +49,7 @@ Assert.AreEqual(expectedResult, actualResult);
 
 The Moq implementation of `Create.MockedMemoryCache()` returns the mocked memory cache. If you need the mock (e.g., to verify an invocation) use `Mock.Get(mockedCache)`:
 
-``` C#
+```c#
 var cacheEntryKey = "SomethingInTheCache";
 var expectedResult = Guid.NewGuid().ToString();
 
