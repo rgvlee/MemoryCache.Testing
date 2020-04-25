@@ -1,8 +1,7 @@
 using System;
-using MemoryCache.Testing.Common.Helpers;
 using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Logging;
+using NSubstitute;
 using NUnit.Framework;
 
 namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
@@ -10,14 +9,21 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
     [TestFixture]
     public class ReadmeTests
     {
-        [SetUp]
-        public virtual void SetUp()
+        [Test]
+        public void Example1()
         {
-            //LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
+            var cacheEntryKey = "SomethingInTheCache";
+            var expectedResult = Guid.NewGuid().ToString();
+
+            var mockedCache = Create.MockedMemoryCache();
+
+            var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
-        public virtual void GetOrCreateWithSetUp_Guid_ReturnsExpectedResult()
+        public void Example2()
         {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
@@ -25,13 +31,13 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
             var mockedCache = Create.MockedMemoryCache();
             mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
 
-            var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
+            var actualResult = mockedCache.Get(cacheEntryKey);
 
             Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
-        public virtual void MinimumViableInterface_Guid_ReturnsExpectedResult()
+        public void Example3()
         {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
@@ -40,7 +46,9 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
 
             var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
-            Assert.AreEqual(expectedResult, actualResult);
+            mockedCache.Received(1).CreateEntry(cacheEntryKey);
+            object cacheEntryValue;
+            mockedCache.Received(1).TryGetValue(cacheEntryKey, out cacheEntryValue);
         }
     }
 }

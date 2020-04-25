@@ -7,7 +7,7 @@ namespace MemoryCache.Testing.Common
     /// <summary>
     ///     A helper to perform checks on arguments.
     /// </summary>
-    public class EnsureArgument
+    public static class EnsureArgument
     {
         /// <summary>
         ///     Ensures that a string argument is not null or empty.
@@ -18,9 +18,11 @@ namespace MemoryCache.Testing.Common
         /// <exception cref="ArgumentNullException">If the string argument is null.</exception>
         /// <exception cref="ArgumentException">If the string argument is empty.</exception>
         public static string IsNotNullOrEmpty(string @string, string argumentName)
-
         {
-            if (!string.IsNullOrEmpty(@string)) return @string;
+            if (!string.IsNullOrEmpty(@string))
+            {
+                return @string;
+            }
 
             IsNotNull(argumentName, nameof(argumentName));
             IsNotNullOrEmpty(argumentName, nameof(argumentName));
@@ -37,9 +39,12 @@ namespace MemoryCache.Testing.Common
         /// <param name="argumentName">The argument name.</param>
         /// <returns>The argument.</returns>
         /// <exception cref="ArgumentNullException">If the argument is null.</exception>
-        public static T IsNotNull<T>(T argument, string argumentName)
+        public static T IsNotNull<T>(T argument, string argumentName) where T : class
         {
-            if (argument != null) return argument;
+            if (argument != null)
+            {
+                return argument;
+            }
 
             IsNotNull(argumentName, nameof(argumentName));
             IsNotNullOrEmpty(argumentName, nameof(argumentName));
@@ -59,7 +64,10 @@ namespace MemoryCache.Testing.Common
         {
             IsNotNull(enumerable, argumentName);
 
-            if (enumerable.Any()) return enumerable;
+            if (enumerable.Any())
+            {
+                return enumerable;
+            }
 
             IsNotNull(argumentName, nameof(argumentName));
             IsNotNullOrEmpty(argumentName, nameof(argumentName));

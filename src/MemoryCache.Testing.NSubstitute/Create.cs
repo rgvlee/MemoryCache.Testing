@@ -8,7 +8,7 @@ namespace MemoryCache.Testing.NSubstitute
     /// <summary>
     ///     Factory for creating mocked instances.
     /// </summary>
-    public class Create
+    public static class Create
     {
         private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(Create));
 
