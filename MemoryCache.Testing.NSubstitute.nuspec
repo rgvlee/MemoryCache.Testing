@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <projectUrl>https://github.com/rgvlee/MemoryCache.Testing/</projectUrl>
-    <description>A mocking library that provides a system mock for Microsoft.Extensions.Caching.Memory.IMemoryCache using NSubstitute.</description>
+    <description>A mocking library that provides a system mock for the Microsoft.Extensions.Caching.Memory.IMemoryCache interface using NSubstitute.</description>
     <copyright>Copyright (c) 2020 Lee Anderson</copyright>
     <tags>MemoryCache IMemoryCache NSubstitute nsub mock testing</tags>
     <repository url="https://github.com/rgvlee/MemoryCache.Testing/" />
