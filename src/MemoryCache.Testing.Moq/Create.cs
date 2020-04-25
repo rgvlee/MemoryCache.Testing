@@ -8,7 +8,7 @@ namespace MemoryCache.Testing.Moq
     /// <summary>
     ///     Factory for creating mocked instances.
     /// </summary>
-    public class Create
+    public static class Create
     {
         private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(Create));
 
@@ -21,7 +21,10 @@ namespace MemoryCache.Testing.Moq
             var mock = new Mock<IMemoryCache>();
 
             mock.Setup(m => m.CreateEntry(It.IsAny<object>()))
-                .Callback((object key) => { Logger.LogDebug("Cache CreateEntry invoked"); })
+                .Callback((object key) =>
+                {
+                    Logger.LogDebug("Cache CreateEntry invoked");
+                })
                 .Returns((object key) => new CacheEntryFake(key, mock.Object));
 
             return mock.Object;

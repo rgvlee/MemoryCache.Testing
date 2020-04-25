@@ -139,7 +139,10 @@ namespace MemoryCache.Testing.Common.Tests
 
             var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
-            Assert.Multiple(() => { Assert.AreEqual(expectedResult, actualResult); });
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(expectedResult, actualResult);
+            });
         }
 
         [Test]
@@ -150,7 +153,10 @@ namespace MemoryCache.Testing.Common.Tests
 
             var actualResult = MockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
-            Assert.Multiple(() => { Assert.AreEqual(expectedResult, actualResult); });
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual(expectedResult, actualResult);
+            });
         }
 
         [Test]
@@ -235,7 +241,10 @@ namespace MemoryCache.Testing.Common.Tests
         {
             var cacheEntryKey = "SomethingInTheCache";
 
-            Assert.DoesNotThrow(() => { MockedCache.Remove(cacheEntryKey); });
+            Assert.DoesNotThrow(() =>
+            {
+                MockedCache.Remove(cacheEntryKey);
+            });
         }
 
         [Test]

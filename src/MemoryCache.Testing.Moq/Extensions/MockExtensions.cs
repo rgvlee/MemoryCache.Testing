@@ -52,7 +52,8 @@ namespace MemoryCache.Testing.Moq.Extensions
 
             Logger.LogDebug($"Setting up cache entry Get for '{cacheEntryKey}'");
 
-            Mock.Get(mockedMemoryCache).Setup(m => m.TryGetValue(It.Is<object>(k => k.Equals(cacheEntryKey)), out cacheEntryValue))
+            Mock.Get(mockedMemoryCache)
+                .Setup(m => m.TryGetValue(It.Is<object>(k => k.Equals(cacheEntryKey)), out cacheEntryValue))
                 .Callback(() => Logger.LogDebug("Cache TryGetValue invoked"))
                 .Returns(true);
 
@@ -76,7 +77,8 @@ namespace MemoryCache.Testing.Moq.Extensions
 
             Logger.LogDebug($"Setting up cache entry Remove for '{cacheEntryKey}' (default value: {defaultValue})");
 
-            Mock.Get(mockedMemoryCache).Setup(m => m.Remove(It.Is<object>(k => k.Equals(cacheEntryKey))))
+            Mock.Get(mockedMemoryCache)
+                .Setup(m => m.Remove(It.Is<object>(k => k.Equals(cacheEntryKey))))
                 .Callback(() =>
                 {
                     Logger.LogDebug("Cache Remove invoked");
