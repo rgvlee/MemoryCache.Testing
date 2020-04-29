@@ -1,6 +1,8 @@
 using System;
+using MemoryCache.Testing.Common.Helpers;
 using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -9,6 +11,12 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
     [TestFixture]
     public class ReadmeTests
     {
+        [SetUp]
+        public void SetUp()
+        {
+            LoggerHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Debug));
+        }
+        
         [Test]
         public void Example1()
         {
