@@ -1,6 +1,8 @@
 using System;
+using MemoryCache.Testing.Common.Helpers;
 using MemoryCache.Testing.Moq.Extensions;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
 
@@ -9,6 +11,12 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests
     [TestFixture]
     public class ReadmeTests
     {
+        [SetUp]
+        public void SetUp()
+        {
+            LoggerHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Debug));
+        }
+
         [Test]
         public void Example1()
         {
@@ -29,7 +37,7 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests
             var expectedResult = Guid.NewGuid().ToString();
 
             var mockedCache = Create.MockedMemoryCache();
-            mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
+            mockedCache.Set(cacheEntryKey, expectedResult);
 
             var actualResult = mockedCache.Get(cacheEntryKey);
 
@@ -38,6 +46,20 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests
 
         [Test]
         public void Example3()
+        {
+            var cacheEntryKey = "SomethingInTheCache";
+            var expectedResult = Guid.NewGuid().ToString();
+
+            var mockedCache = Create.MockedMemoryCache();
+            mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
+
+            var actualResult = mockedCache.Get(cacheEntryKey);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void Example4()
         {
             var cacheEntryKey = "SomethingInTheCache";
             var expectedResult = Guid.NewGuid().ToString();
