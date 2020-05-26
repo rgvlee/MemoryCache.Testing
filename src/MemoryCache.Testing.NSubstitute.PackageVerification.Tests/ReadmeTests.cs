@@ -51,20 +51,6 @@ namespace MemoryCache.Testing.NSubstitute.PackageVerification.Tests
             var expectedResult = Guid.NewGuid().ToString();
 
             var mockedCache = Create.MockedMemoryCache();
-            mockedCache.SetUpCacheEntry(cacheEntryKey, expectedResult);
-
-            var actualResult = mockedCache.Get(cacheEntryKey);
-
-            Assert.AreEqual(expectedResult, actualResult);
-        }
-
-        [Test]
-        public void Example4()
-        {
-            var cacheEntryKey = "SomethingInTheCache";
-            var expectedResult = Guid.NewGuid().ToString();
-
-            var mockedCache = Create.MockedMemoryCache();
 
             var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResult);
 
