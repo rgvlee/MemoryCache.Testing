@@ -1,4 +1,5 @@
-﻿using MemoryCache.Testing.Common;
+﻿using System;
+using MemoryCache.Testing.Common;
 using MemoryCache.Testing.Common.Extensions;
 using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
@@ -21,6 +22,7 @@ namespace MemoryCache.Testing.Moq.Extensions
         /// <param name="cacheEntryKey">The cache entry key.</param>
         /// <param name="cacheEntryValue">The cache entry value.</param>
         /// <returns>The mocked memory cache.</returns>
+        [Obsolete("Access to this method will be removed in a future version. Use the mocked memory cache to maintain cache entries.")]
         public static IMemoryCache SetUpCacheEntry(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue)
         {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
@@ -45,6 +47,7 @@ namespace MemoryCache.Testing.Moq.Extensions
         /// <remarks>
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
+        [Obsolete("Access to this method will be removed in a future version. Use the mocked memory cache to maintain cache entries.")]
         public static IMemoryCache SetUpCacheEntryGet(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object cacheEntryValue)
         {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
@@ -70,6 +73,7 @@ namespace MemoryCache.Testing.Moq.Extensions
         /// <remarks>
         ///     I've left this accessible for advanced usage. In most cases you should just use <see cref="SetUpCacheEntry" />.
         /// </remarks>
+        [Obsolete("Access to this method will be removed in a future version. Use the mocked memory cache to maintain cache entries.")]
         public static IMemoryCache SetUpCacheEntryRemove(this IMemoryCache mockedMemoryCache, object cacheEntryKey, object defaultValue)
         {
             EnsureArgument.IsNotNull(mockedMemoryCache, nameof(mockedMemoryCache));
