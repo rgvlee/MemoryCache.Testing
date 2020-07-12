@@ -2,15 +2,11 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rgvlee/MemoryCache.Testing&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&utm_medium=referral&utm_content=rgvlee/MemoryCache.Testing&utm_campaign=Badge_Coverage)
 
-__*A functional system mock of the Microsoft.Extensions.Caching.Memory.IMemoryCache interface using Moq and NSubstitute*__
+__*A fully functional system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface*__
 
 ## Overview
 
-The intent of this library is to provide a system mock of the Microsoft.Extensions.Caching.Memory.IMemoryCache interface. Some of the features include:
-
--   Easy to use - create a functional system mock with a single line of code
--   Implicit or explicit cache entry set up, it's up to you
--   Access to all of the good stuff that these great mocking libraries provide (e.g., Moq Verify)
+The intent of this library is to provide an easy to use, fully functional system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface.
 
 ## Resources
 
@@ -33,7 +29,7 @@ var actualResult = mockedCache.GetOrCreate(cacheEntryKey, entry => expectedResul
 Assert.AreEqual(expectedResult, actualResult);
 ```
 
-If your SUT populates the cache you're done. If it doesn't, or you like your arrange to be verbose, populate it as if you were using the real thing:
+This creates a mocked `IMemoryCache`. If your SUT populates the cache you're done. If it doesn't, or you like your arrange to be verbose, populate it as if you were using the real thing:
 
 ```c#
 var cacheEntryKey = "SomethingInTheCache";
@@ -47,7 +43,7 @@ var actualResult = mockedCache.Get(cacheEntryKey);
 Assert.AreEqual(expectedResult, actualResult);
 ```
 
-The Moq implementation of `Create.MockedMemoryCache()` returns the mocked memory cache. If you need the mock (e.g., to verify an invocation) use `Mock.Get(mockedCache)`:
+The Moq implementation of `Create.MockedMemoryCache()` returns the mocked memory cache. If you need the mock itself (e.g., to verify an invocation) use `Mock.Get(mockedCache)`:
 
 ```c#
 var cacheEntryKey = "SomethingInTheCache";
@@ -62,3 +58,5 @@ cacheMock.Verify(x => x.CreateEntry(cacheEntryKey), Times.Once);
 object cacheEntryValue;
 cacheMock.Verify(x => x.TryGetValue(cacheEntryKey, out cacheEntryValue), Times.Once);
 ```
+
+With regard to verifying invocations, all members of the `IMemoryCache` interface are mocked.
