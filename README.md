@@ -4,7 +4,7 @@
 
 ## Overview
 
-The intent of this library is to provide the ability to create and manage an Microsoft.Extensions.Caching.Memory IMemoryCache system mock. It's easy to use (usually just a single line of code) with implementations for both Moq and NSubstitute.
+MemoryCache.Testing is a system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface. It's easy to use (usually just a single line of code) with implementations for both Moq and NSubstitute.
 
 ## Resources
 
