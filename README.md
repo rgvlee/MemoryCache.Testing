@@ -2,11 +2,9 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rgvlee/MemoryCache.Testing&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/c9692f6a601d4dc0b485224de539c441)](https://www.codacy.com/manual/rgvlee/MemoryCache.Testing?utm_source=github.com&utm_medium=referral&utm_content=rgvlee/MemoryCache.Testing&utm_campaign=Badge_Coverage)
 
-__*A fully functional system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface*__
-
 ## Overview
 
-The intent of this library is to provide an easy to use, fully functional system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface.
+The intent of this library is to provide the ability to create and manage an Microsoft.Extensions.Caching.Memory IMemoryCache system mock. It's easy to use (usually just a single line of code) with implementations for both Moq and NSubstitute.
 
 ## Resources
 
