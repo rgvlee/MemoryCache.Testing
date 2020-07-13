@@ -6,7 +6,7 @@
     <Version>1.0.0</Version>
     <Authors>rgvlee</Authors>
     <Company>rgvlee</Company>
-    <Description>A mocking library that provides a fully functional system mock of the Microsoft.Extensions.Caching.Memory IMemoryCache interface using Moq.</Description>
+    <description>AA mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using Moq.</description>
     <Copyright>Copyright (c) 2020 Lee Anderson</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/rgvlee/MemoryCache.Testing/</PackageProjectUrl>
