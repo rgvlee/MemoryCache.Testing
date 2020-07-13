@@ -1,6 +1,5 @@
 using System;
 using MemoryCache.Testing.Common.Helpers;
-using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
