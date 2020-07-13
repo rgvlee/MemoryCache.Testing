@@ -6,7 +6,7 @@
     <Version>1.0.0</Version>
     <Authors>rgvlee</Authors>
     <Company>rgvlee</Company>
-    <description>AA mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using NSubstitute.</description>
+    <description>A mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using NSubstitute.</description>
     <Copyright>Copyright (c) 2020 Lee Anderson</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/rgvlee/MemoryCache.Testing/</PackageProjectUrl>

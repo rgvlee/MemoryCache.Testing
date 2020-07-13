@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <projectUrl>https://github.com/rgvlee/MemoryCache.Testing/</projectUrl>
-    <description>AA mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using Moq.</description>
+    <description>A mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using Moq.</description>
     <copyright>Copyright (c) 2020 Lee Anderson</copyright>
     <tags>MemoryCache IMemoryCache Moq mock testing</tags>
     <repository url="https://github.com/rgvlee/MemoryCache.Testing/" />
