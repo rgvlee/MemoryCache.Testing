@@ -25,6 +25,8 @@ namespace MemoryCache.Testing.Common
             EnsureArgument.IsNotNull(key, nameof(key));
 
             Key = key;
+            ExpirationTokens = new List<IChangeToken>();
+            PostEvictionCallbacks = new List<PostEvictionCallbackRegistration>();
         }
 
         /// <summary>
