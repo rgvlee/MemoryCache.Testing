@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace MemoryCache.Testing.NSubstitute.Tests
 {
     [TestFixture]
-    public class Tests : TestBase
+    public class Tests : BaseForTests
     {
         [SetUp]
         public override void SetUp()
