@@ -1,14 +1,16 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Primitives;
 using NUnit.Framework;
 
 namespace MemoryCache.Testing.Common.Tests
 {
     [TestFixture]
-    public abstract class TestBase
+    public abstract class BaseForTests
     {
         [SetUp]
         public virtual void SetUp()
@@ -16,7 +18,7 @@ namespace MemoryCache.Testing.Common.Tests
             LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
         }
 
-        protected static readonly ILogger<TestBase> Logger = LoggerHelper.CreateLogger<TestBase>();
+        protected static readonly ILogger<BaseForTests> Logger = LoggerHelper.CreateLogger<BaseForTests>();
 
         protected IMemoryCache MockedCache;
 
@@ -78,6 +80,42 @@ namespace MemoryCache.Testing.Common.Tests
             var actualResult2 = MockedCache.Get<Guid>(cacheEntryKey);
 
             Assert.AreEqual(expectedResult2, actualResult2);
+        }
+
+        [Test]
+        public virtual void AddWithExpirationTokenThenGet_Guid_ReturnsExpectedResult()
+        {
+            var cacheEntryKey = "SomethingInTheCache";
+            var expectedResult = Guid.NewGuid();
+
+            var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10));
+            var cacheEntryOptions = new MemoryCacheEntryOptions().AddExpirationToken(new CancellationChangeToken(cts.Token));
+
+            Logger.LogDebug("Add invocation started");
+            MockedCache.Set(cacheEntryKey, expectedResult, cacheEntryOptions);
+            Logger.LogDebug("Add invocation finished");
+            var actualResult = MockedCache.Get<Guid>(cacheEntryKey);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public virtual void AddWithPostEvictionCallbackThenGet_Guid_ReturnsExpectedResult()
+        {
+            var cacheEntryKey = "SomethingInTheCache";
+            var expectedResult = Guid.NewGuid();
+
+            var cacheEntryOptions = new MemoryCacheEntryOptions().RegisterPostEvictionCallback((key, value, reason, state) =>
+            {
+                Logger.LogDebug("PostEvictionCallback invoked");
+            });
+
+            Logger.LogDebug("Add invocation started");
+            MockedCache.Set(cacheEntryKey, expectedResult, cacheEntryOptions);
+            Logger.LogDebug("Add invocation finished");
+            var actualResult = MockedCache.Get<Guid>(cacheEntryKey);
+
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]

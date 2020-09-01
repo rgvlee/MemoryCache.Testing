@@ -1,4 +1,5 @@
 ﻿using System;
+using MemoryCache.Testing.Common.Helpers;
 
 namespace MemoryCache.Testing.Common.Extensions
 {

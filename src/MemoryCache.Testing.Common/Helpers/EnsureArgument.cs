@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MemoryCache.Testing.Common
+namespace MemoryCache.Testing.Common.Helpers
 {
     /// <summary>
     ///     A helper to perform checks on arguments.

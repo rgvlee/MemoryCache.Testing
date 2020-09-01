@@ -52,40 +52,6 @@
         <member name="P:MemoryCache.Testing.Common.CacheEntryFake.Size">
             <inheritdoc />
         </member>
-        <member name="T:MemoryCache.Testing.Common.EnsureArgument">
-            <summary>
-                A helper to perform checks on arguments.
-            </summary>
-        </member>
-        <member name="M:MemoryCache.Testing.Common.EnsureArgument.IsNotNullOrEmpty(System.String,System.String)">
-            <summary>
-                Ensures that a string argument is not null or empty.
-            </summary>
-            <param name="string">The string argument.</param>
-            <param name="argumentName">The argument name.</param>
-            <returns>The string argument.</returns>
-            <exception cref="T:System.ArgumentNullException">If the string argument is null.</exception>
-            <exception cref="T:System.ArgumentException">If the string argument is empty.</exception>
-        </member>
-        <member name="M:MemoryCache.Testing.Common.EnsureArgument.IsNotNull``1(``0,System.String)">
-            <summary>
-                Ensures that an argument is not null.
-            </summary>
-            <typeparam name="T">The argument type.</typeparam>
-            <param name="argument">The argument.</param>
-            <param name="argumentName">The argument name.</param>
-            <returns>The argument.</returns>
-            <exception cref="T:System.ArgumentNullException">If the argument is null.</exception>
-        </member>
-        <member name="M:MemoryCache.Testing.Common.EnsureArgument.IsNotEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
-            <summary>
-                Ensures that a sequence is not empty.
-            </summary>
-            <typeparam name="T">The enumerable item type.</typeparam>
-            <param name="enumerable">The enumerable argument.</param>
-            <param name="argumentName">The enumerable argument name.</param>
-            <returns>The enumerable argument.</returns>
-        </member>
         <member name="T:MemoryCache.Testing.Common.Extensions.TypeExtensions">
             <summary>
                 Extensions for the type type.
@@ -97,6 +63,40 @@
             </summary>
             <param name="type">The type instance.</param>
             <returns>The default value for the specified type.</returns>
+        </member>
+        <member name="T:MemoryCache.Testing.Common.Helpers.EnsureArgument">
+            <summary>
+                A helper to perform checks on arguments.
+            </summary>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.EnsureArgument.IsNotNullOrEmpty(System.String,System.String)">
+            <summary>
+                Ensures that a string argument is not null or empty.
+            </summary>
+            <param name="string">The string argument.</param>
+            <param name="argumentName">The argument name.</param>
+            <returns>The string argument.</returns>
+            <exception cref="T:System.ArgumentNullException">If the string argument is null.</exception>
+            <exception cref="T:System.ArgumentException">If the string argument is empty.</exception>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.EnsureArgument.IsNotNull``1(``0,System.String)">
+            <summary>
+                Ensures that an argument is not null.
+            </summary>
+            <typeparam name="T">The argument type.</typeparam>
+            <param name="argument">The argument.</param>
+            <param name="argumentName">The argument name.</param>
+            <returns>The argument.</returns>
+            <exception cref="T:System.ArgumentNullException">If the argument is null.</exception>
+        </member>
+        <member name="M:MemoryCache.Testing.Common.Helpers.EnsureArgument.IsNotEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+                Ensures that a sequence is not empty.
+            </summary>
+            <typeparam name="T">The enumerable item type.</typeparam>
+            <param name="enumerable">The enumerable argument.</param>
+            <param name="argumentName">The enumerable argument name.</param>
+            <returns>The enumerable argument.</returns>
         </member>
         <member name="T:MemoryCache.Testing.Common.Helpers.LoggerHelper">
             <summary>

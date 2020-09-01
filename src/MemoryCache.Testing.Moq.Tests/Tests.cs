@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace MemoryCache.Testing.Moq.Tests
 {
     [TestFixture]
-    public class Tests : TestBase
+    public class Tests : BaseForTests
     {
         [SetUp]
         public override void SetUp()

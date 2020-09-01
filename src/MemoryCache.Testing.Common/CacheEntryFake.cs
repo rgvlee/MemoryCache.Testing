@@ -12,7 +12,7 @@ namespace MemoryCache.Testing.Common
     /// </summary>
     public class CacheEntryFake : ICacheEntry
     {
-        public static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(CacheEntryFake));
+        protected static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(CacheEntryFake));
 
         protected readonly IMemoryCache MockedMemoryCache;
 
@@ -25,8 +25,6 @@ namespace MemoryCache.Testing.Common
             EnsureArgument.IsNotNull(key, nameof(key));
 
             Key = key;
-            ExpirationTokens = new List<IChangeToken>();
-            PostEvictionCallbacks = new List<PostEvictionCallbackRegistration>();
         }
 
         /// <summary>
@@ -64,10 +62,10 @@ namespace MemoryCache.Testing.Common
         public TimeSpan? SlidingExpiration { get; set; }
 
         /// <inheritdoc />
-        public IList<IChangeToken> ExpirationTokens { get; }
+        public IList<IChangeToken> ExpirationTokens { get; } = new List<IChangeToken>();
 
         /// <inheritdoc />
-        public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks { get; }
+        public IList<PostEvictionCallbackRegistration> PostEvictionCallbacks { get; } = new List<PostEvictionCallbackRegistration>();
 
         /// <inheritdoc />
         public CacheItemPriority Priority { get; set; }
