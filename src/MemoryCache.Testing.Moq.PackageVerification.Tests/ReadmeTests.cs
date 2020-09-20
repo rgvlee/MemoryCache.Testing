@@ -13,7 +13,7 @@ namespace MemoryCache.Testing.Moq.PackageVerification.Tests
         [SetUp]
         public void SetUp()
         {
-            LoggerHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Debug));
+            LoggingHelper.LoggerFactory = LoggerFactory.Create(builder => builder.AddConsole().SetMinimumLevel(LogLevel.Debug));
         }
 
         [Test]

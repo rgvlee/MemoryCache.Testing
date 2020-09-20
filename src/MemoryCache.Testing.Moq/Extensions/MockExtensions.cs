@@ -1,10 +1,9 @@
 ﻿using System;
-using MemoryCache.Testing.Common;
-using MemoryCache.Testing.Common.Extensions;
-using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Moq;
+using rgvlee.Core.Common.Extensions;
+using rgvlee.Core.Common.Helpers;
 
 namespace MemoryCache.Testing.Moq.Extensions
 {
@@ -13,7 +12,7 @@ namespace MemoryCache.Testing.Moq.Extensions
     /// </summary>
     public static class MockExtensions
     {
-        private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(MockExtensions));
+        private static readonly ILogger Logger = LoggingHelper.CreateLogger(typeof(MockExtensions));
 
         /// <summary>
         ///     Sets up a cache entry.

@@ -1,7 +1,7 @@
-﻿using MemoryCache.Testing.Common.Extensions;
-using MemoryCache.Testing.Moq.Extensions;
+﻿using MemoryCache.Testing.Moq.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using rgvlee.Core.Common.Extensions;
 
 namespace MemoryCache.Testing.Moq
 {

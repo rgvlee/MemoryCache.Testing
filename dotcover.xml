@@ -1,154 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="302" TotalStatements="342" CoveragePercent="88" ReportType="DetailedXml" DotCoverVersion="2020.1.2">
+<Root CoveredStatements="294" TotalStatements="314" CoveragePercent="94" ReportType="DetailedXml" DotCoverVersion="2020.1.2">
   <FileIndices>
-    <File Index="1" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="7B09E5D34E40A4498099ABA49A51F27DA1538E3E46D25D53CCDD25EF6864AE99" />
-    <File Index="2" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\Helpers\EnsureArgument.cs" ChecksumAlgorithm="SHA256" Checksum="9877AF284D195E7323BDD4F15252BA45371CB51AC375B7C0061AE87773C1EFFC" />
-    <File Index="3" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\Helpers\LoggerHelper.cs" ChecksumAlgorithm="SHA256" Checksum="A9136F40C3AF60111A35C2BAEB1243EFDDDA3BDFE71E47BA5E8D693282714D03" />
-    <File Index="4" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\Extensions\TypeExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="A52898916B6F3EBBDDD93D18CE2B7FA8B210030355445CF0C68DA417F0FFD35E" />
-    <File Index="5" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETStandard,Version=v2.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="A6E03AE4DF13FE05345E9022D1F1CD24ECAE4BFD66DB4843697C855D9F9335F4" />
-    <File Index="6" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\obj\Release\netstandard2.0\MemoryCache.Testing.Common.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="1214C59890FBD7CA9A0948C9FE4548E80002C9FE050A3C35974236F552B3E93B" />
-    <File Index="7" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="AA77BEE355B158A5DD41A3DE38C29FD7EE376B51D943D0F173B290CB7B0E3D12" />
-    <File Index="8" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\Create.cs" ChecksumAlgorithm="SHA256" Checksum="25C1D69E0668F045799F132E4E1D946C5C9B53B2036667D125E952015AACCBF1" />
-    <File Index="9" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\Extensions\MockExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="3E8A4650CEAE994D4DA9F20FA319B6D3BAAD8121D587D53087F6E36F8DD3E7DC" />
-    <File Index="10" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\obj\Release\netstandard2.0\MemoryCache.Testing.Moq.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A4DFDD8F22415FA2105A146E7332FC76AC122D36C90B2E0EF06D2A45F3F94E5D" />
-    <File Index="11" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="03FABFC8B011A23E34DE443B7E8C010E4C6A1DC9551E8E49C09F1525A50580A9" />
-    <File Index="12" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\Create.cs" ChecksumAlgorithm="SHA256" Checksum="78FA8AD87F9D9495AE445A4B0DBBA496BC47E353C4138F545385F7A6A8F10020" />
-    <File Index="13" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\Extensions\MockExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="992A6BED6811D46046A4DC2DEDA12BB768BA481CB1A151031075F31B897549B3" />
-    <File Index="14" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\obj\Release\netstandard2.0\MemoryCache.Testing.NSubstitute.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="EE95C360C4D739BF5BA6C5B5A8E98922F1F773DA3C35105DE11B6CA811872749" />
-    <File Index="15" Name="C:\Users\rgvlee\.nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="16" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\BaseForTests.cs" ChecksumAlgorithm="SHA256" Checksum="0DCB27395C5E8D12EC890E6BD1618CBED0D380F8B161D66D6EC63029E792DA77" />
-    <File Index="17" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\TestObject.cs" ChecksumAlgorithm="SHA256" Checksum="69B6A1851546DF636BDC93894C10307F2127D4246297AEEDA3A11E83518ABF05" />
-    <File Index="18" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="BA2133B738D7BA5827BA5945BE6EFC0A0CCBE5376875900E4C7318633F1D0C71" />
-    <File Index="19" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.Common.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="CA01D78BC3A5B8144F1AF820EE6BCEBA2FC02A5F83167E7E6CC4EE4A4228CCBC" />
-    <File Index="20" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq.Tests\Tests.cs" ChecksumAlgorithm="SHA256" Checksum="3DC0913BD8908DB63C556C90CF72DFD6222DF34DBBAC78EC6226D827A8E7A195" />
-    <File Index="21" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.Moq.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="CD96D05A6AB28A67A2BDB627AE1F7F312B72D0BABA28F1B42982EC5BE29938C1" />
-    <File Index="22" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute.Tests\Tests.cs" ChecksumAlgorithm="SHA256" Checksum="007F4AA3A159DE9EFBEB9A3F4EB95C3F5066EFB9968D8A050A92308439C90081" />
-    <File Index="23" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.NSubstitute.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="B8FA6B757B384183EF171C84EB75A6C5EEDA7E44C9EAF50F04F3974CE55CC1C4" />
+    <File Index="1" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="D1ACA44F4C642CF9BB1898494D2DA3599190336FD3E7D4EE36DEB74A793CF39F" />
+    <File Index="2" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\Create.cs" ChecksumAlgorithm="SHA256" Checksum="66E67A4BBDEF303482DDCA76FF7419A63346ACABF106B282382C3376C60CE547" />
+    <File Index="3" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\Extensions\MockExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="641AE96947C55FC5E652A990613E6C985B51BF93BB8D4B08ACB7D2AA973DFF96" />
+    <File Index="4" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETStandard,Version=v2.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="A6E03AE4DF13FE05345E9022D1F1CD24ECAE4BFD66DB4843697C855D9F9335F4" />
+    <File Index="5" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq\obj\Release\netstandard2.0\MemoryCache.Testing.Moq.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="F5C9A9BBFF03776034519894CB8C29F8DA0E9DECD9D3167D5CEFC58D1789A397" />
+    <File Index="6" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="3E209ABE2D06DE1ACABBA53B98D9C2F172C44E80EADE4C3CF6BCFC3735CC7068" />
+    <File Index="7" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\Create.cs" ChecksumAlgorithm="SHA256" Checksum="BCF13F2E77269A47916AB9CD3326E7588AEB63CA8201DFDAF758FDE4913DB24A" />
+    <File Index="8" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\Extensions\MockExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="2E157E3EC3B2DD689889C78BABB9127782B1F09A3640106C1ADA107B10C30AD6" />
+    <File Index="9" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute\obj\Release\netstandard2.0\MemoryCache.Testing.NSubstitute.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="D304938E1E3E7CDFEB7AFFC4E0ED6E6E30357865ADD6C6E020DE73617398F324" />
+    <File Index="10" Name="C:\Users\rgvlee\.nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="11" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\BaseForTests.cs" ChecksumAlgorithm="SHA256" Checksum="72C1F871E24ABFE6679DCCB260DEF96199EB85E412EE93043BE8D58C35D2812E" />
+    <File Index="12" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\TestObject.cs" ChecksumAlgorithm="SHA256" Checksum="69B6A1851546DF636BDC93894C10307F2127D4246297AEEDA3A11E83518ABF05" />
+    <File Index="13" Name="C:\Users\rgvlee\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="BA2133B738D7BA5827BA5945BE6EFC0A0CCBE5376875900E4C7318633F1D0C71" />
+    <File Index="14" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.Common.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="7486A6D79D4C17CF67B88C9188230D33B50EE26BDB653237AFF02B720F89D569" />
+    <File Index="15" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\CacheEntryFake.cs" ChecksumAlgorithm="SHA256" Checksum="83DBAE58C4F9DA0140D74B926F459B5A51EDCD62FEE812607028A79BEB22D61C" />
+    <File Index="16" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Common\obj\Release\netstandard2.0\MemoryCache.Testing.Common.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="DA4ED4B640B29C8EA4E350945957FD7B3352EBB02882C4FF0084C3F116B69DEE" />
+    <File Index="17" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq.Tests\Tests.cs" ChecksumAlgorithm="SHA256" Checksum="3DC0913BD8908DB63C556C90CF72DFD6222DF34DBBAC78EC6226D827A8E7A195" />
+    <File Index="18" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.Moq.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.Moq.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A1240B4EF09274E18B5F4E1EDE643665C380B40F15E5E3DB22CF708127334F56" />
+    <File Index="19" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute.Tests\Tests.cs" ChecksumAlgorithm="SHA256" Checksum="007F4AA3A159DE9EFBEB9A3F4EB95C3F5066EFB9968D8A050A92308439C90081" />
+    <File Index="20" Name="Z:\Git\MemoryCache.Testing\src\MemoryCache.Testing.NSubstitute.Tests\obj\Release\netcoreapp2.2\MemoryCache.Testing.NSubstitute.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="9217791157A10F10B56EFDBBA28B5A81EE8D23EC206F4FA52DFA9A32505B22E9" />
   </FileIndices>
-  <Assembly Name="MemoryCache.Testing.Common" CoveredStatements="29" TotalStatements="56" CoveragePercent="52">
+  <Assembly Name="MemoryCache.Testing.Common" CoveredStatements="21" TotalStatements="28" CoveragePercent="75">
     <Namespace Name="MemoryCache.Testing.Common" CoveredStatements="21" TotalStatements="28" CoveragePercent="75">
       <Type Name="CacheEntryFake" CoveredStatements="21" TotalStatements="28" CoveragePercent="75">
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="15" Column="9" EndLine="15" EndColumn="102" Covered="True" />
+          <Statement FileIndex="15" Line="15" Column="9" EndLine="15" EndColumn="103" Covered="True" />
         </Method>
         <Method Name=".ctor(System.Object):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="1" Line="65" Column="64" EndLine="65" EndColumn="88" Covered="True" />
-          <Statement FileIndex="1" Line="68" Column="89" EndLine="68" EndColumn="133" Covered="True" />
-          <Statement FileIndex="1" Line="23" Column="9" EndLine="23" EndColumn="42" Covered="True" />
-          <Statement FileIndex="1" Line="25" Column="13" EndLine="25" EndColumn="56" Covered="True" />
-          <Statement FileIndex="1" Line="27" Column="13" EndLine="27" EndColumn="23" Covered="True" />
-          <Statement FileIndex="1" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="15" Line="65" Column="64" EndLine="65" EndColumn="88" Covered="True" />
+          <Statement FileIndex="15" Line="68" Column="89" EndLine="68" EndColumn="133" Covered="True" />
+          <Statement FileIndex="15" Line="23" Column="9" EndLine="23" EndColumn="42" Covered="True" />
+          <Statement FileIndex="15" Line="25" Column="13" EndLine="25" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="27" Column="13" EndLine="27" EndColumn="23" Covered="True" />
+          <Statement FileIndex="15" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
         </Method>
         <Method Name=".ctor(System.Object,Microsoft.Extensions.Caching.Memory.IMemoryCache):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="1" Line="35" Column="77" EndLine="35" EndColumn="86" Covered="True" />
-          <Statement FileIndex="1" Line="37" Column="13" EndLine="37" EndColumn="56" Covered="True" />
-          <Statement FileIndex="1" Line="38" Column="13" EndLine="38" EndColumn="84" Covered="True" />
-          <Statement FileIndex="1" Line="40" Column="13" EndLine="40" EndColumn="51" Covered="True" />
-          <Statement FileIndex="1" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="15" Line="35" Column="77" EndLine="35" EndColumn="86" Covered="True" />
+          <Statement FileIndex="15" Line="37" Column="13" EndLine="37" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="38" Column="13" EndLine="38" EndColumn="84" Covered="True" />
+          <Statement FileIndex="15" Line="40" Column="13" EndLine="40" EndColumn="51" Covered="True" />
+          <Statement FileIndex="15" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Dispose():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+          <Statement FileIndex="15" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="get_AbsoluteExpiration():System.Nullable&lt;System.DateTimeOffset&gt;" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="56" Column="53" EndLine="56" EndColumn="57" Covered="False" />
+          <Statement FileIndex="15" Line="56" Column="53" EndLine="56" EndColumn="57" Covered="False" />
         </Method>
         <Method Name="get_AbsoluteExpirationRelativeToNow():System.Nullable&lt;System.TimeSpan&gt;" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="59" Column="60" EndLine="59" EndColumn="64" Covered="False" />
+          <Statement FileIndex="15" Line="59" Column="60" EndLine="59" EndColumn="64" Covered="False" />
         </Method>
         <Method Name="get_ExpirationTokens():System.Collections.Generic.IList&lt;Microsoft.Extensions.Primitives.IChangeToken&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="65" Column="55" EndLine="65" EndColumn="59" Covered="True" />
+          <Statement FileIndex="15" Line="65" Column="55" EndLine="65" EndColumn="59" Covered="True" />
         </Method>
         <Method Name="get_Key():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="50" Column="29" EndLine="50" EndColumn="33" Covered="True" />
+          <Statement FileIndex="15" Line="50" Column="29" EndLine="50" EndColumn="33" Covered="True" />
         </Method>
         <Method Name="get_PostEvictionCallbacks():System.Collections.Generic.IList&lt;Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="68" Column="80" EndLine="68" EndColumn="84" Covered="True" />
+          <Statement FileIndex="15" Line="68" Column="80" EndLine="68" EndColumn="84" Covered="True" />
         </Method>
         <Method Name="get_Priority():Microsoft.Extensions.Caching.Memory.CacheItemPriority" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="71" Column="45" EndLine="71" EndColumn="49" Covered="False" />
+          <Statement FileIndex="15" Line="71" Column="45" EndLine="71" EndColumn="49" Covered="False" />
         </Method>
         <Method Name="get_Size():System.Nullable&lt;System.Int64&gt;" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="74" Column="29" EndLine="74" EndColumn="33" Covered="False" />
+          <Statement FileIndex="15" Line="74" Column="29" EndLine="74" EndColumn="33" Covered="False" />
         </Method>
         <Method Name="get_SlidingExpiration():System.Nullable&lt;System.TimeSpan&gt;" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="62" Column="46" EndLine="62" EndColumn="50" Covered="False" />
+          <Statement FileIndex="15" Line="62" Column="46" EndLine="62" EndColumn="50" Covered="False" />
         </Method>
         <Method Name="get_Value():System.Object" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="53" Column="39" EndLine="53" EndColumn="43" Covered="False" />
+          <Statement FileIndex="15" Line="53" Column="39" EndLine="53" EndColumn="43" Covered="False" />
         </Method>
         <Method Name="set_AbsoluteExpiration(System.Nullable&lt;System.DateTimeOffset&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="56" Column="58" EndLine="56" EndColumn="62" Covered="True" />
+          <Statement FileIndex="15" Line="56" Column="58" EndLine="56" EndColumn="62" Covered="True" />
         </Method>
         <Method Name="set_AbsoluteExpirationRelativeToNow(System.Nullable&lt;System.TimeSpan&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="59" Column="65" EndLine="59" EndColumn="69" Covered="True" />
+          <Statement FileIndex="15" Line="59" Column="65" EndLine="59" EndColumn="69" Covered="True" />
         </Method>
         <Method Name="set_Priority(Microsoft.Extensions.Caching.Memory.CacheItemPriority):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="71" Column="50" EndLine="71" EndColumn="54" Covered="True" />
+          <Statement FileIndex="15" Line="71" Column="50" EndLine="71" EndColumn="54" Covered="True" />
         </Method>
         <Method Name="set_Size(System.Nullable&lt;System.Int64&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="74" Column="34" EndLine="74" EndColumn="38" Covered="True" />
+          <Statement FileIndex="15" Line="74" Column="34" EndLine="74" EndColumn="38" Covered="True" />
         </Method>
         <Method Name="set_SlidingExpiration(System.Nullable&lt;System.TimeSpan&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="1" Line="62" Column="51" EndLine="62" EndColumn="55" Covered="True" />
+          <Statement FileIndex="15" Line="62" Column="51" EndLine="62" EndColumn="55" Covered="True" />
         </Method>
         <Method Name="set_Value(System.Object):System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="1" Line="53" Column="44" EndLine="53" EndColumn="48" Covered="False" />
-        </Method>
-      </Type>
-    </Namespace>
-    <Namespace Name="MemoryCache.Testing.Common.Extensions" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-      <Type Name="TypeExtensions" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-        <Method Name="GetDefaultValue(System.Type):System.Object" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="4" Line="18" Column="13" EndLine="18" EndColumn="58" Covered="True" />
-          <Statement FileIndex="4" Line="20" Column="13" EndLine="20" EndColumn="77" Covered="True" />
-        </Method>
-      </Type>
-    </Namespace>
-    <Namespace Name="MemoryCache.Testing.Common.Helpers" CoveredStatements="6" TotalStatements="26" CoveragePercent="23">
-      <Type Name="EnsureArgument" CoveredStatements="2" TotalStatements="19" CoveragePercent="11">
-        <Method Name="IsNotEmpty&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;,System.String):System.Collections.Generic.IEnumerable&lt;T&gt;" CoveredStatements="0" TotalStatements="7" CoveragePercent="0">
-          <Statement FileIndex="2" Line="65" Column="13" EndLine="65" EndColumn="49" Covered="False" />
-          <Statement FileIndex="2" Line="67" Column="13" EndLine="67" EndColumn="34" Covered="False" />
-          <Statement FileIndex="2" Line="69" Column="17" EndLine="69" EndColumn="35" Covered="False" />
-          <Statement FileIndex="2" Line="72" Column="13" EndLine="72" EndColumn="59" Covered="False" />
-          <Statement FileIndex="2" Line="73" Column="13" EndLine="73" EndColumn="66" Covered="False" />
-          <Statement FileIndex="2" Line="75" Column="13" EndLine="75" EndColumn="58" Covered="False" />
-          <Statement FileIndex="2" Line="76" Column="13" EndLine="76" EndColumn="22" Covered="False" />
-        </Method>
-        <Method Name="IsNotNull&lt;T&gt;(T,System.String):T" CoveredStatements="2" TotalStatements="6" CoveragePercent="33">
-          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="34" Covered="True" />
-          <Statement FileIndex="2" Line="46" Column="17" EndLine="46" EndColumn="33" Covered="True" />
-          <Statement FileIndex="2" Line="49" Column="13" EndLine="49" EndColumn="59" Covered="False" />
-          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="66" Covered="False" />
-          <Statement FileIndex="2" Line="52" Column="13" EndLine="52" EndColumn="62" Covered="False" />
-          <Statement FileIndex="2" Line="53" Column="13" EndLine="53" EndColumn="22" Covered="False" />
-        </Method>
-        <Method Name="IsNotNullOrEmpty(System.String,System.String):System.String" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
-          <Statement FileIndex="2" Line="22" Column="13" EndLine="22" EndColumn="48" Covered="False" />
-          <Statement FileIndex="2" Line="24" Column="17" EndLine="24" EndColumn="32" Covered="False" />
-          <Statement FileIndex="2" Line="27" Column="13" EndLine="27" EndColumn="59" Covered="False" />
-          <Statement FileIndex="2" Line="28" Column="13" EndLine="28" EndColumn="66" Covered="False" />
-          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="118" Covered="False" />
-          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="22" Covered="False" />
-        </Method>
-      </Type>
-      <Type Name="LoggerHelper" CoveredStatements="4" TotalStatements="7" CoveragePercent="57">
-        <Method Name="CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
-          <Statement FileIndex="3" Line="38" Column="13" EndLine="38" EndColumn="81" Covered="False" />
-          <Statement FileIndex="3" Line="40" Column="13" EndLine="40" EndColumn="61" Covered="False" />
-        </Method>
-        <Method Name="CreateLogger(System.Type):Microsoft.Extensions.Logging.ILogger" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="3" Line="50" Column="13" EndLine="50" EndColumn="58" Covered="True" />
-          <Statement FileIndex="3" Line="52" Column="13" EndLine="52" EndColumn="53" Covered="True" />
-        </Method>
-        <Method Name="CreateLogger&lt;T&gt;():Microsoft.Extensions.Logging.ILogger&lt;T&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="52" Covered="True" />
-        </Method>
-        <Method Name="get_LoggerFactory():Microsoft.Extensions.Logging.ILoggerFactory" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="3" Line="17" Column="20" EndLine="17" EndColumn="64" Covered="True" />
-        </Method>
-        <Method Name="set_LoggerFactory(Microsoft.Extensions.Logging.ILoggerFactory):System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="3" Line="18" Column="20" EndLine="18" EndColumn="36" Covered="False" />
+          <Statement FileIndex="15" Line="53" Column="44" EndLine="53" EndColumn="48" Covered="False" />
         </Method>
       </Type>
     </Namespace>
@@ -157,43 +98,43 @@
     <Namespace Name="MemoryCache.Testing.Moq" CoveredStatements="14" TotalStatements="17" CoveragePercent="82">
       <Type Name="CacheEntryFake" CoveredStatements="7" TotalStatements="10" CoveragePercent="70">
         <Method Name=".ctor(System.Object):System.Void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
-          <Statement FileIndex="7" Line="14" Column="45" EndLine="14" EndColumn="54" Covered="False" />
-          <Statement FileIndex="7" Line="14" Column="57" EndLine="14" EndColumn="58" Covered="False" />
+          <Statement FileIndex="1" Line="14" Column="45" EndLine="14" EndColumn="54" Covered="False" />
+          <Statement FileIndex="1" Line="14" Column="57" EndLine="14" EndColumn="58" Covered="False" />
         </Method>
         <Method Name=".ctor(System.Object,Microsoft.Extensions.Caching.Memory.IMemoryCache):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="7" Line="17" Column="77" EndLine="17" EndColumn="105" Covered="True" />
-          <Statement FileIndex="7" Line="17" Column="108" EndLine="17" EndColumn="109" Covered="True" />
+          <Statement FileIndex="1" Line="17" Column="77" EndLine="17" EndColumn="105" Covered="True" />
+          <Statement FileIndex="1" Line="17" Column="108" EndLine="17" EndColumn="109" Covered="True" />
         </Method>
         <Method Name="get_Value():System.Object" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="7" Line="21" Column="20" EndLine="21" EndColumn="26" Covered="False" />
+          <Statement FileIndex="1" Line="21" Column="20" EndLine="21" EndColumn="26" Covered="False" />
         </Method>
         <Method Name="set_Value(System.Object):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="7" Line="24" Column="17" EndLine="24" EndColumn="63" Covered="True" />
-          <Statement FileIndex="7" Line="25" Column="17" EndLine="25" EndColumn="32" Covered="True" />
-          <Statement FileIndex="7" Line="26" Column="17" EndLine="26" EndColumn="67" Covered="True" />
-          <Statement FileIndex="7" Line="27" Column="17" EndLine="27" EndColumn="99" Covered="True" />
-          <Statement FileIndex="7" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="24" Column="17" EndLine="24" EndColumn="63" Covered="True" />
+          <Statement FileIndex="1" Line="25" Column="17" EndLine="25" EndColumn="32" Covered="True" />
+          <Statement FileIndex="1" Line="26" Column="17" EndLine="26" EndColumn="67" Covered="True" />
+          <Statement FileIndex="1" Line="27" Column="17" EndLine="27" EndColumn="99" Covered="True" />
+          <Statement FileIndex="1" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
         </Method>
       </Type>
       <Type Name="Create" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
           <Method Name="&lt;MockedMemoryCache&gt;b__1_1(System.Object):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="8" Line="26" Column="21" EndLine="26" EndColumn="66" Covered="True" />
-            <Statement FileIndex="8" Line="27" Column="17" EndLine="27" EndColumn="18" Covered="True" />
+            <Statement FileIndex="2" Line="26" Column="21" EndLine="26" EndColumn="66" Covered="True" />
+            <Statement FileIndex="2" Line="27" Column="17" EndLine="27" EndColumn="18" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass1_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;MockedMemoryCache&gt;b__2(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="8" Line="28" Column="42" EndLine="28" EndColumn="78" Covered="True" />
+            <Statement FileIndex="2" Line="28" Column="42" EndLine="28" EndColumn="78" Covered="True" />
           </Method>
         </Type>
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="8" Line="13" Column="9" EndLine="13" EndColumn="92" Covered="True" />
+          <Statement FileIndex="2" Line="13" Column="9" EndLine="13" EndColumn="93" Covered="True" />
         </Method>
         <Method Name="MockedMemoryCache():Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="8" Line="21" Column="13" EndLine="21" EndColumn="49" Covered="True" />
-          <Statement FileIndex="8" Line="23" Column="13" EndLine="28" EndColumn="80" Covered="True" />
-          <Statement FileIndex="8" Line="30" Column="13" EndLine="30" EndColumn="32" Covered="True" />
+          <Statement FileIndex="2" Line="21" Column="13" EndLine="21" EndColumn="49" Covered="True" />
+          <Statement FileIndex="2" Line="23" Column="13" EndLine="28" EndColumn="80" Covered="True" />
+          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="32" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -201,41 +142,41 @@
       <Type Name="MockExtensions" CoveredStatements="21" TotalStatements="21" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;SetUpCacheEntryGet&gt;b__2_1():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="9" Line="60" Column="33" EndLine="60" EndColumn="77" Covered="True" />
+            <Statement FileIndex="3" Line="59" Column="33" EndLine="59" EndColumn="77" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;SetUpCacheEntryRemove&gt;b__1():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="9" Line="88" Column="21" EndLine="88" EndColumn="61" Covered="True" />
-            <Statement FileIndex="9" Line="89" Column="21" EndLine="89" EndColumn="87" Covered="True" />
-            <Statement FileIndex="9" Line="90" Column="17" EndLine="90" EndColumn="18" Covered="True" />
+            <Statement FileIndex="3" Line="87" Column="21" EndLine="87" EndColumn="61" Covered="True" />
+            <Statement FileIndex="3" Line="88" Column="21" EndLine="88" EndColumn="87" Covered="True" />
+            <Statement FileIndex="3" Line="89" Column="17" EndLine="89" EndColumn="18" Covered="True" />
           </Method>
         </Type>
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="9" Line="16" Column="9" EndLine="16" EndColumn="100" Covered="True" />
+          <Statement FileIndex="3" Line="15" Column="9" EndLine="15" EndColumn="101" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="9" Line="28" Column="13" EndLine="28" EndColumn="84" Covered="True" />
-          <Statement FileIndex="9" Line="29" Column="13" EndLine="29" EndColumn="76" Covered="True" />
-          <Statement FileIndex="9" Line="31" Column="13" EndLine="31" EndColumn="147" Covered="True" />
-          <Statement FileIndex="9" Line="33" Column="13" EndLine="33" EndColumn="82" Covered="True" />
-          <Statement FileIndex="9" Line="35" Column="13" EndLine="35" EndColumn="113" Covered="True" />
-          <Statement FileIndex="9" Line="37" Column="13" EndLine="37" EndColumn="38" Covered="True" />
+          <Statement FileIndex="3" Line="27" Column="13" EndLine="27" EndColumn="84" Covered="True" />
+          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="76" Covered="True" />
+          <Statement FileIndex="3" Line="30" Column="13" EndLine="30" EndColumn="147" Covered="True" />
+          <Statement FileIndex="3" Line="32" Column="13" EndLine="32" EndColumn="82" Covered="True" />
+          <Statement FileIndex="3" Line="34" Column="13" EndLine="34" EndColumn="113" Covered="True" />
+          <Statement FileIndex="3" Line="36" Column="13" EndLine="36" EndColumn="38" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntryGet(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="9" Line="53" Column="13" EndLine="53" EndColumn="84" Covered="True" />
-          <Statement FileIndex="9" Line="54" Column="13" EndLine="54" EndColumn="76" Covered="True" />
-          <Statement FileIndex="9" Line="56" Column="13" EndLine="56" EndColumn="82" Covered="True" />
-          <Statement FileIndex="9" Line="58" Column="13" EndLine="61" EndColumn="32" Covered="True" />
-          <Statement FileIndex="9" Line="63" Column="13" EndLine="63" EndColumn="38" Covered="True" />
+          <Statement FileIndex="3" Line="52" Column="13" EndLine="52" EndColumn="84" Covered="True" />
+          <Statement FileIndex="3" Line="53" Column="13" EndLine="53" EndColumn="76" Covered="True" />
+          <Statement FileIndex="3" Line="55" Column="13" EndLine="55" EndColumn="82" Covered="True" />
+          <Statement FileIndex="3" Line="57" Column="13" EndLine="60" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="62" Column="13" EndLine="62" EndColumn="38" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntryRemove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="9" Line="79" Column="13" EndLine="79" EndColumn="84" Covered="True" />
-          <Statement FileIndex="9" Line="80" Column="13" EndLine="80" EndColumn="76" Covered="True" />
-          <Statement FileIndex="9" Line="82" Column="13" EndLine="82" EndColumn="117" Covered="True" />
-          <Statement FileIndex="9" Line="84" Column="13" EndLine="90" EndColumn="20" Covered="True" />
-          <Statement FileIndex="9" Line="92" Column="13" EndLine="92" EndColumn="38" Covered="True" />
+          <Statement FileIndex="3" Line="78" Column="13" EndLine="78" EndColumn="84" Covered="True" />
+          <Statement FileIndex="3" Line="79" Column="13" EndLine="79" EndColumn="76" Covered="True" />
+          <Statement FileIndex="3" Line="81" Column="13" EndLine="81" EndColumn="117" Covered="True" />
+          <Statement FileIndex="3" Line="83" Column="13" EndLine="89" EndColumn="20" Covered="True" />
+          <Statement FileIndex="3" Line="91" Column="13" EndLine="91" EndColumn="38" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -244,43 +185,43 @@
     <Namespace Name="MemoryCache.Testing.NSubstitute" CoveredStatements="14" TotalStatements="17" CoveragePercent="82">
       <Type Name="CacheEntryFake" CoveredStatements="7" TotalStatements="10" CoveragePercent="70">
         <Method Name=".ctor(System.Object):System.Void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
-          <Statement FileIndex="11" Line="14" Column="45" EndLine="14" EndColumn="54" Covered="False" />
-          <Statement FileIndex="11" Line="14" Column="57" EndLine="14" EndColumn="58" Covered="False" />
+          <Statement FileIndex="6" Line="14" Column="45" EndLine="14" EndColumn="54" Covered="False" />
+          <Statement FileIndex="6" Line="14" Column="57" EndLine="14" EndColumn="58" Covered="False" />
         </Method>
         <Method Name=".ctor(System.Object,Microsoft.Extensions.Caching.Memory.IMemoryCache):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="11" Line="17" Column="77" EndLine="17" EndColumn="105" Covered="True" />
-          <Statement FileIndex="11" Line="17" Column="108" EndLine="17" EndColumn="109" Covered="True" />
+          <Statement FileIndex="6" Line="17" Column="77" EndLine="17" EndColumn="105" Covered="True" />
+          <Statement FileIndex="6" Line="17" Column="108" EndLine="17" EndColumn="109" Covered="True" />
         </Method>
         <Method Name="get_Value():System.Object" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="11" Line="21" Column="20" EndLine="21" EndColumn="26" Covered="False" />
+          <Statement FileIndex="6" Line="21" Column="20" EndLine="21" EndColumn="26" Covered="False" />
         </Method>
         <Method Name="set_Value(System.Object):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="11" Line="24" Column="17" EndLine="24" EndColumn="63" Covered="True" />
-          <Statement FileIndex="11" Line="25" Column="17" EndLine="25" EndColumn="32" Covered="True" />
-          <Statement FileIndex="11" Line="26" Column="17" EndLine="26" EndColumn="67" Covered="True" />
-          <Statement FileIndex="11" Line="27" Column="17" EndLine="27" EndColumn="99" Covered="True" />
-          <Statement FileIndex="11" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="24" Column="17" EndLine="24" EndColumn="63" Covered="True" />
+          <Statement FileIndex="6" Line="25" Column="17" EndLine="25" EndColumn="32" Covered="True" />
+          <Statement FileIndex="6" Line="26" Column="17" EndLine="26" EndColumn="67" Covered="True" />
+          <Statement FileIndex="6" Line="27" Column="17" EndLine="27" EndColumn="99" Covered="True" />
+          <Statement FileIndex="6" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
         </Method>
       </Type>
       <Type Name="Create" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;MockedMemoryCache&gt;b__1_1(NSubstitute.Core.CallInfo):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="12" Line="29" Column="31" EndLine="29" EndColumn="75" Covered="True" />
+            <Statement FileIndex="7" Line="29" Column="31" EndLine="29" EndColumn="75" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass1_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
           <Method Name="&lt;MockedMemoryCache&gt;b__0(NSubstitute.Core.CallInfo):Microsoft.Extensions.Caching.Memory.ICacheEntry" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="12" Line="26" Column="21" EndLine="26" EndColumn="43" Covered="True" />
-            <Statement FileIndex="12" Line="27" Column="21" EndLine="27" EndColumn="58" Covered="True" />
+            <Statement FileIndex="7" Line="26" Column="21" EndLine="26" EndColumn="43" Covered="True" />
+            <Statement FileIndex="7" Line="27" Column="21" EndLine="27" EndColumn="58" Covered="True" />
           </Method>
         </Type>
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="12" Line="13" Column="9" EndLine="13" EndColumn="92" Covered="True" />
+          <Statement FileIndex="7" Line="13" Column="9" EndLine="13" EndColumn="93" Covered="True" />
         </Method>
         <Method Name="MockedMemoryCache():Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="12" Line="21" Column="13" EndLine="21" EndColumn="55" Covered="True" />
-          <Statement FileIndex="12" Line="23" Column="13" EndLine="29" EndColumn="77" Covered="True" />
-          <Statement FileIndex="12" Line="31" Column="13" EndLine="31" EndColumn="25" Covered="True" />
+          <Statement FileIndex="7" Line="21" Column="13" EndLine="21" EndColumn="55" Covered="True" />
+          <Statement FileIndex="7" Line="23" Column="13" EndLine="29" EndColumn="77" Covered="True" />
+          <Statement FileIndex="7" Line="31" Column="13" EndLine="31" EndColumn="25" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -288,49 +229,49 @@
       <Type Name="MockExtensions" CoveredStatements="24" TotalStatements="24" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;SetUpCacheEntryGet&gt;b__2_2(NSubstitute.Core.CallInfo):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="13" Line="64" Column="31" EndLine="64" EndColumn="75" Covered="True" />
+            <Statement FileIndex="8" Line="63" Column="31" EndLine="63" EndColumn="75" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
           <Method Name="&lt;SetUpCacheEntryGet&gt;b__1(NSubstitute.Core.CallInfo):System.Boolean" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="13" Line="61" Column="21" EndLine="61" EndColumn="44" Covered="True" />
-            <Statement FileIndex="13" Line="62" Column="21" EndLine="62" EndColumn="33" Covered="True" />
+            <Statement FileIndex="8" Line="60" Column="21" EndLine="60" EndColumn="44" Covered="True" />
+            <Statement FileIndex="8" Line="61" Column="21" EndLine="61" EndColumn="33" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
           <Method Name="&lt;SetUpCacheEntryRemove&gt;b__0(Microsoft.Extensions.Caching.Memory.IMemoryCache):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="13" Line="87" Column="41" EndLine="87" EndColumn="95" Covered="True" />
+            <Statement FileIndex="8" Line="86" Column="41" EndLine="86" EndColumn="95" Covered="True" />
           </Method>
           <Method Name="&lt;SetUpCacheEntryRemove&gt;b__1(NSubstitute.Core.CallInfo):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="13" Line="90" Column="21" EndLine="90" EndColumn="61" Covered="True" />
-            <Statement FileIndex="13" Line="91" Column="21" EndLine="91" EndColumn="87" Covered="True" />
-            <Statement FileIndex="13" Line="92" Column="17" EndLine="92" EndColumn="18" Covered="True" />
+            <Statement FileIndex="8" Line="89" Column="21" EndLine="89" EndColumn="61" Covered="True" />
+            <Statement FileIndex="8" Line="90" Column="21" EndLine="90" EndColumn="87" Covered="True" />
+            <Statement FileIndex="8" Line="91" Column="17" EndLine="91" EndColumn="18" Covered="True" />
           </Method>
         </Type>
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="13" Line="16" Column="9" EndLine="16" EndColumn="100" Covered="True" />
+          <Statement FileIndex="8" Line="15" Column="9" EndLine="15" EndColumn="101" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntry(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="13" Line="28" Column="13" EndLine="28" EndColumn="84" Covered="True" />
-          <Statement FileIndex="13" Line="29" Column="13" EndLine="29" EndColumn="76" Covered="True" />
-          <Statement FileIndex="13" Line="31" Column="13" EndLine="31" EndColumn="147" Covered="True" />
-          <Statement FileIndex="13" Line="33" Column="13" EndLine="33" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="35" Column="13" EndLine="35" EndColumn="113" Covered="True" />
-          <Statement FileIndex="13" Line="37" Column="13" EndLine="37" EndColumn="38" Covered="True" />
+          <Statement FileIndex="8" Line="27" Column="13" EndLine="27" EndColumn="84" Covered="True" />
+          <Statement FileIndex="8" Line="28" Column="13" EndLine="28" EndColumn="76" Covered="True" />
+          <Statement FileIndex="8" Line="30" Column="13" EndLine="30" EndColumn="147" Covered="True" />
+          <Statement FileIndex="8" Line="32" Column="13" EndLine="32" EndColumn="82" Covered="True" />
+          <Statement FileIndex="8" Line="34" Column="13" EndLine="34" EndColumn="113" Covered="True" />
+          <Statement FileIndex="8" Line="36" Column="13" EndLine="36" EndColumn="38" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntryGet(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="13" Line="53" Column="13" EndLine="53" EndColumn="84" Covered="True" />
-          <Statement FileIndex="13" Line="54" Column="13" EndLine="54" EndColumn="76" Covered="True" />
-          <Statement FileIndex="13" Line="56" Column="13" EndLine="56" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="58" Column="13" EndLine="64" EndColumn="77" Covered="True" />
-          <Statement FileIndex="13" Line="66" Column="13" EndLine="66" EndColumn="38" Covered="True" />
+          <Statement FileIndex="8" Line="52" Column="13" EndLine="52" EndColumn="84" Covered="True" />
+          <Statement FileIndex="8" Line="53" Column="13" EndLine="53" EndColumn="76" Covered="True" />
+          <Statement FileIndex="8" Line="55" Column="13" EndLine="55" EndColumn="82" Covered="True" />
+          <Statement FileIndex="8" Line="57" Column="13" EndLine="63" EndColumn="77" Covered="True" />
+          <Statement FileIndex="8" Line="65" Column="13" EndLine="65" EndColumn="38" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntryRemove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Object):Microsoft.Extensions.Caching.Memory.IMemoryCache" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="13" Line="82" Column="13" EndLine="82" EndColumn="84" Covered="True" />
-          <Statement FileIndex="13" Line="83" Column="13" EndLine="83" EndColumn="76" Covered="True" />
-          <Statement FileIndex="13" Line="85" Column="13" EndLine="85" EndColumn="117" Covered="True" />
-          <Statement FileIndex="13" Line="87" Column="13" EndLine="92" EndColumn="20" Covered="True" />
-          <Statement FileIndex="13" Line="94" Column="13" EndLine="94" EndColumn="38" Covered="True" />
+          <Statement FileIndex="8" Line="81" Column="13" EndLine="81" EndColumn="84" Covered="True" />
+          <Statement FileIndex="8" Line="82" Column="13" EndLine="82" EndColumn="76" Covered="True" />
+          <Statement FileIndex="8" Line="84" Column="13" EndLine="84" EndColumn="117" Covered="True" />
+          <Statement FileIndex="8" Line="86" Column="13" EndLine="91" EndColumn="20" Covered="True" />
+          <Statement FileIndex="8" Line="93" Column="13" EndLine="93" EndColumn="38" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -340,306 +281,306 @@
       <Type Name="BaseForTests" CoveredStatements="167" TotalStatements="172" CoveragePercent="97">
         <Type Name="&lt;&gt;c" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
           <Method Name="&lt;AddWithPostEvictionCallbackThenGet_Guid_ReturnsExpectedResult&gt;b__9_0(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object):System.Void" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
-            <Statement FileIndex="16" Line="110" Column="17" EndLine="110" EndColumn="65" Covered="False" />
-            <Statement FileIndex="16" Line="111" Column="13" EndLine="111" EndColumn="14" Covered="False" />
+            <Statement FileIndex="11" Line="110" Column="17" EndLine="110" EndColumn="65" Covered="False" />
+            <Statement FileIndex="11" Line="111" Column="13" EndLine="111" EndColumn="14" Covered="False" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass10_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Threading.Tasks.Task&lt;System.Guid&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="127" Column="91" EndLine="127" EndColumn="122" Covered="True" />
+            <Statement FileIndex="11" Line="127" Column="91" EndLine="127" EndColumn="122" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass11_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Threading.Tasks.Task&lt;MemoryCache.Testing.Common.Tests.TestObject&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="138" Column="91" EndLine="138" EndColumn="122" Covered="True" />
+            <Statement FileIndex="11" Line="138" Column="91" EndLine="138" EndColumn="122" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass12_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
           <Method Name="&lt;GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Threading.Tasks.Task&lt;System.Guid&gt;" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="16" Line="150" Column="91" EndLine="150" EndColumn="122" Covered="False" />
+            <Statement FileIndex="11" Line="150" Column="91" EndLine="150" EndColumn="122" Covered="False" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass13_0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
           <Method Name="&lt;GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Guid" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="161" Column="81" EndLine="161" EndColumn="96" Covered="True" />
+            <Statement FileIndex="11" Line="161" Column="81" EndLine="161" EndColumn="96" Covered="True" />
           </Method>
           <Method Name="&lt;GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue&gt;b__1():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="16" Line="167" Column="17" EndLine="167" EndColumn="73" Covered="True" />
-            <Statement FileIndex="16" Line="168" Column="17" EndLine="168" EndColumn="71" Covered="True" />
-            <Statement FileIndex="16" Line="169" Column="13" EndLine="169" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="167" Column="17" EndLine="167" EndColumn="73" Covered="True" />
+            <Statement FileIndex="11" Line="168" Column="17" EndLine="168" EndColumn="71" Covered="True" />
+            <Statement FileIndex="11" Line="169" Column="13" EndLine="169" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass14_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Guid" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="178" Column="80" EndLine="178" EndColumn="94" Covered="True" />
+            <Statement FileIndex="11" Line="178" Column="80" EndLine="178" EndColumn="94" Covered="True" />
           </Method>
           <Method Name="&lt;GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult&gt;b__1():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="16" Line="182" Column="17" EndLine="182" EndColumn="63" Covered="True" />
-            <Statement FileIndex="16" Line="183" Column="13" EndLine="183" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="182" Column="17" EndLine="182" EndColumn="63" Covered="True" />
+            <Statement FileIndex="11" Line="183" Column="13" EndLine="183" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass15_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):MemoryCache.Testing.Common.Tests.TestObject" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="192" Column="80" EndLine="192" EndColumn="94" Covered="True" />
+            <Statement FileIndex="11" Line="192" Column="80" EndLine="192" EndColumn="94" Covered="True" />
           </Method>
           <Method Name="&lt;GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult&gt;b__1():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="16" Line="196" Column="17" EndLine="196" EndColumn="63" Covered="True" />
-            <Statement FileIndex="16" Line="197" Column="13" EndLine="197" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="196" Column="17" EndLine="196" EndColumn="63" Covered="True" />
+            <Statement FileIndex="11" Line="197" Column="13" EndLine="197" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass16_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
           <Method Name="&lt;GetOrCreateWithSetUp_Guid_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Guid" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="16" Line="207" Column="80" EndLine="207" EndColumn="94" Covered="False" />
+            <Statement FileIndex="11" Line="207" Column="80" EndLine="207" EndColumn="94" Covered="False" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass17_0" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
           <Method Name="&lt;GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):MemoryCache.Testing.Common.Tests.TestObject" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="221" Column="81" EndLine="221" EndColumn="96" Covered="True" />
+            <Statement FileIndex="11" Line="221" Column="81" EndLine="221" EndColumn="96" Covered="True" />
           </Method>
           <Method Name="&lt;GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults&gt;b__1():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-            <Statement FileIndex="16" Line="226" Column="17" EndLine="226" EndColumn="46" Covered="True" />
-            <Statement FileIndex="16" Line="227" Column="17" EndLine="227" EndColumn="65" Covered="True" />
-            <Statement FileIndex="16" Line="229" Column="17" EndLine="229" EndColumn="65" Covered="True" />
-            <Statement FileIndex="16" Line="231" Column="17" EndLine="231" EndColumn="49" Covered="True" />
-            <Statement FileIndex="16" Line="232" Column="17" EndLine="232" EndColumn="65" Covered="True" />
-            <Statement FileIndex="16" Line="233" Column="13" EndLine="233" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="226" Column="17" EndLine="226" EndColumn="46" Covered="True" />
+            <Statement FileIndex="11" Line="227" Column="17" EndLine="227" EndColumn="65" Covered="True" />
+            <Statement FileIndex="11" Line="229" Column="17" EndLine="229" EndColumn="65" Covered="True" />
+            <Statement FileIndex="11" Line="231" Column="17" EndLine="231" EndColumn="49" Covered="True" />
+            <Statement FileIndex="11" Line="232" Column="17" EndLine="232" EndColumn="65" Covered="True" />
+            <Statement FileIndex="11" Line="233" Column="13" EndLine="233" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass18_0" CoveredStatements="4" TotalStatements="5" CoveragePercent="80">
           <Method Name="&lt;GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):MemoryCache.Testing.Common.Tests.TestObject" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="16" Line="245" Column="81" EndLine="245" EndColumn="95" Covered="False" />
+            <Statement FileIndex="11" Line="245" Column="81" EndLine="245" EndColumn="95" Covered="False" />
           </Method>
           <Method Name="&lt;GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults&gt;b__1():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-            <Statement FileIndex="16" Line="250" Column="17" EndLine="250" EndColumn="64" Covered="True" />
-            <Statement FileIndex="16" Line="251" Column="17" EndLine="251" EndColumn="64" Covered="True" />
-            <Statement FileIndex="16" Line="252" Column="17" EndLine="252" EndColumn="64" Covered="True" />
-            <Statement FileIndex="16" Line="253" Column="13" EndLine="253" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="250" Column="17" EndLine="250" EndColumn="64" Covered="True" />
+            <Statement FileIndex="11" Line="251" Column="17" EndLine="251" EndColumn="64" Covered="True" />
+            <Statement FileIndex="11" Line="252" Column="17" EndLine="252" EndColumn="64" Covered="True" />
+            <Statement FileIndex="11" Line="253" Column="13" EndLine="253" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass20_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;MinimumViableInterface_Guid_ReturnsExpectedResult&gt;b__0(Microsoft.Extensions.Caching.Memory.ICacheEntry):System.Guid" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="16" Line="272" Column="80" EndLine="272" EndColumn="94" Covered="True" />
+            <Statement FileIndex="11" Line="272" Column="80" EndLine="272" EndColumn="94" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass21_0" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
           <Method Name="&lt;RemoveWithNoSetUp_DoesNothing&gt;b__0():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-            <Statement FileIndex="16" Line="284" Column="17" EndLine="284" EndColumn="51" Covered="True" />
-            <Statement FileIndex="16" Line="285" Column="13" EndLine="285" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="284" Column="17" EndLine="284" EndColumn="51" Covered="True" />
+            <Statement FileIndex="11" Line="285" Column="13" EndLine="285" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass22_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;RemoveWithNoSetUp_Guid_ReturnsDefaultValue&gt;b__0():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="16" Line="299" Column="17" EndLine="299" EndColumn="71" Covered="True" />
-            <Statement FileIndex="16" Line="300" Column="17" EndLine="300" EndColumn="71" Covered="True" />
-            <Statement FileIndex="16" Line="301" Column="13" EndLine="301" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="299" Column="17" EndLine="299" EndColumn="71" Covered="True" />
+            <Statement FileIndex="11" Line="300" Column="17" EndLine="300" EndColumn="71" Covered="True" />
+            <Statement FileIndex="11" Line="301" Column="13" EndLine="301" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass23_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;RemoveWithSetUp_Guid_ReturnsDefaultValue&gt;b__0():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="16" Line="318" Column="17" EndLine="318" EndColumn="65" Covered="True" />
-            <Statement FileIndex="16" Line="319" Column="17" EndLine="319" EndColumn="71" Covered="True" />
-            <Statement FileIndex="16" Line="320" Column="13" EndLine="320" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="318" Column="17" EndLine="318" EndColumn="65" Covered="True" />
+            <Statement FileIndex="11" Line="319" Column="17" EndLine="319" EndColumn="71" Covered="True" />
+            <Statement FileIndex="11" Line="320" Column="13" EndLine="320" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="&lt;AddNullValue_TestObject_DoesNotThrowException&gt;b__0():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="16" Line="35" Column="17" EndLine="35" EndColumn="64" Covered="True" />
-            <Statement FileIndex="16" Line="36" Column="17" EndLine="36" EndColumn="79" Covered="True" />
-            <Statement FileIndex="16" Line="37" Column="13" EndLine="37" EndColumn="14" Covered="True" />
+            <Statement FileIndex="11" Line="35" Column="17" EndLine="35" EndColumn="64" Covered="True" />
+            <Statement FileIndex="11" Line="36" Column="17" EndLine="36" EndColumn="79" Covered="True" />
+            <Statement FileIndex="11" Line="37" Column="13" EndLine="37" EndColumn="14" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;GetOrCreateAsyncWithNoSetUp_Guid_ReturnsExpectedResult&gt;d__10" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="16" Line="124" Column="13" EndLine="124" EndColumn="55" Covered="True" />
-            <Statement FileIndex="16" Line="125" Column="13" EndLine="125" EndColumn="49" Covered="True" />
-            <Statement FileIndex="16" Line="127" Column="13" EndLine="127" EndColumn="124" Covered="True" />
-            <Statement FileIndex="16" Line="129" Column="13" EndLine="129" EndColumn="59" Covered="True" />
-            <Statement FileIndex="16" Line="130" Column="9" EndLine="130" EndColumn="10" Covered="True" />
+            <Statement FileIndex="11" Line="124" Column="13" EndLine="124" EndColumn="55" Covered="True" />
+            <Statement FileIndex="11" Line="125" Column="13" EndLine="125" EndColumn="49" Covered="True" />
+            <Statement FileIndex="11" Line="127" Column="13" EndLine="127" EndColumn="124" Covered="True" />
+            <Statement FileIndex="11" Line="129" Column="13" EndLine="129" EndColumn="59" Covered="True" />
+            <Statement FileIndex="11" Line="130" Column="9" EndLine="130" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;GetOrCreateAsyncWithNoSetUp_TestObject_ReturnsExpectedResult&gt;d__11" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="16" Line="135" Column="13" EndLine="135" EndColumn="55" Covered="True" />
-            <Statement FileIndex="16" Line="136" Column="13" EndLine="136" EndColumn="51" Covered="True" />
-            <Statement FileIndex="16" Line="138" Column="13" EndLine="138" EndColumn="124" Covered="True" />
-            <Statement FileIndex="16" Line="140" Column="13" EndLine="140" EndColumn="59" Covered="True" />
-            <Statement FileIndex="16" Line="141" Column="9" EndLine="141" EndColumn="10" Covered="True" />
+            <Statement FileIndex="11" Line="135" Column="13" EndLine="135" EndColumn="55" Covered="True" />
+            <Statement FileIndex="11" Line="136" Column="13" EndLine="136" EndColumn="51" Covered="True" />
+            <Statement FileIndex="11" Line="138" Column="13" EndLine="138" EndColumn="124" Covered="True" />
+            <Statement FileIndex="11" Line="140" Column="13" EndLine="140" EndColumn="59" Covered="True" />
+            <Statement FileIndex="11" Line="141" Column="9" EndLine="141" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;GetOrCreateAsyncWithSetUp_Guid_ReturnsExpectedResult&gt;d__12" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-            <Statement FileIndex="16" Line="146" Column="13" EndLine="146" EndColumn="55" Covered="True" />
-            <Statement FileIndex="16" Line="147" Column="13" EndLine="147" EndColumn="49" Covered="True" />
-            <Statement FileIndex="16" Line="148" Column="13" EndLine="148" EndColumn="60" Covered="True" />
-            <Statement FileIndex="16" Line="150" Column="13" EndLine="150" EndColumn="124" Covered="True" />
-            <Statement FileIndex="16" Line="152" Column="13" EndLine="152" EndColumn="59" Covered="True" />
-            <Statement FileIndex="16" Line="153" Column="9" EndLine="153" EndColumn="10" Covered="True" />
+            <Statement FileIndex="11" Line="146" Column="13" EndLine="146" EndColumn="55" Covered="True" />
+            <Statement FileIndex="11" Line="147" Column="13" EndLine="147" EndColumn="49" Covered="True" />
+            <Statement FileIndex="11" Line="148" Column="13" EndLine="148" EndColumn="60" Covered="True" />
+            <Statement FileIndex="11" Line="150" Column="13" EndLine="150" EndColumn="124" Covered="True" />
+            <Statement FileIndex="11" Line="152" Column="13" EndLine="152" EndColumn="59" Covered="True" />
+            <Statement FileIndex="11" Line="153" Column="9" EndLine="153" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="16" Line="21" Column="9" EndLine="21" EndColumn="108" Covered="True" />
+          <Statement FileIndex="11" Line="21" Column="9" EndLine="21" EndColumn="109" Covered="True" />
         </Method>
         <Method Name="AddNullValue_TestObject_DoesNotThrowException():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="16" Line="30" Column="13" EndLine="30" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="31" Column="13" EndLine="31" EndColumn="54" Covered="True" />
-          <Statement FileIndex="16" Line="33" Column="13" EndLine="37" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="30" Column="13" EndLine="30" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="31" Column="13" EndLine="31" EndColumn="54" Covered="True" />
+          <Statement FileIndex="11" Line="33" Column="13" EndLine="37" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddThenGetWithNoSetUp_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="16" Line="43" Column="13" EndLine="43" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="44" Column="13" EndLine="44" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="46" Column="13" EndLine="46" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="47" Column="13" EndLine="47" EndColumn="60" Covered="True" />
-          <Statement FileIndex="16" Line="48" Column="13" EndLine="48" EndColumn="56" Covered="True" />
-          <Statement FileIndex="16" Line="49" Column="13" EndLine="49" EndColumn="69" Covered="True" />
-          <Statement FileIndex="16" Line="51" Column="13" EndLine="51" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="43" Column="13" EndLine="43" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="44" Column="13" EndLine="44" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="46" Column="13" EndLine="46" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="47" Column="13" EndLine="47" EndColumn="60" Covered="True" />
+          <Statement FileIndex="11" Line="48" Column="13" EndLine="48" EndColumn="56" Covered="True" />
+          <Statement FileIndex="11" Line="49" Column="13" EndLine="49" EndColumn="69" Covered="True" />
+          <Statement FileIndex="11" Line="51" Column="13" EndLine="51" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddThenGetWithNoSetUp_TestObject_ReturnsExpectedResult():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="16" Line="57" Column="13" EndLine="57" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="58" Column="13" EndLine="58" EndColumn="51" Covered="True" />
-          <Statement FileIndex="16" Line="60" Column="13" EndLine="60" EndColumn="60" Covered="True" />
-          <Statement FileIndex="16" Line="62" Column="13" EndLine="62" EndColumn="75" Covered="True" />
-          <Statement FileIndex="16" Line="64" Column="13" EndLine="64" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="57" Column="13" EndLine="57" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="58" Column="13" EndLine="58" EndColumn="51" Covered="True" />
+          <Statement FileIndex="11" Line="60" Column="13" EndLine="60" EndColumn="60" Covered="True" />
+          <Statement FileIndex="11" Line="62" Column="13" EndLine="62" EndColumn="75" Covered="True" />
+          <Statement FileIndex="11" Line="64" Column="13" EndLine="64" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddThenGetWithSetUp_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
-          <Statement FileIndex="16" Line="70" Column="13" EndLine="70" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="71" Column="13" EndLine="71" EndColumn="50" Covered="True" />
-          <Statement FileIndex="16" Line="72" Column="13" EndLine="72" EndColumn="50" Covered="True" />
-          <Statement FileIndex="16" Line="74" Column="13" EndLine="74" EndColumn="61" Covered="True" />
-          <Statement FileIndex="16" Line="76" Column="13" EndLine="76" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="77" Column="13" EndLine="77" EndColumn="61" Covered="True" />
-          <Statement FileIndex="16" Line="79" Column="13" EndLine="79" EndColumn="61" Covered="True" />
-          <Statement FileIndex="16" Line="80" Column="13" EndLine="80" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="82" Column="13" EndLine="82" EndColumn="61" Covered="True" />
-          <Statement FileIndex="16" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="70" Column="13" EndLine="70" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="71" Column="13" EndLine="71" EndColumn="50" Covered="True" />
+          <Statement FileIndex="11" Line="72" Column="13" EndLine="72" EndColumn="50" Covered="True" />
+          <Statement FileIndex="11" Line="74" Column="13" EndLine="74" EndColumn="61" Covered="True" />
+          <Statement FileIndex="11" Line="76" Column="13" EndLine="76" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="77" Column="13" EndLine="77" EndColumn="61" Covered="True" />
+          <Statement FileIndex="11" Line="79" Column="13" EndLine="79" EndColumn="61" Covered="True" />
+          <Statement FileIndex="11" Line="80" Column="13" EndLine="80" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="82" Column="13" EndLine="82" EndColumn="61" Covered="True" />
+          <Statement FileIndex="11" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddWithExpirationTokenThenGet_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
-          <Statement FileIndex="16" Line="88" Column="13" EndLine="88" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="89" Column="13" EndLine="89" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="91" Column="13" EndLine="91" EndColumn="77" Covered="True" />
-          <Statement FileIndex="16" Line="92" Column="13" EndLine="92" EndColumn="126" Covered="True" />
-          <Statement FileIndex="16" Line="94" Column="13" EndLine="94" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="95" Column="13" EndLine="95" EndColumn="79" Covered="True" />
-          <Statement FileIndex="16" Line="96" Column="13" EndLine="96" EndColumn="56" Covered="True" />
-          <Statement FileIndex="16" Line="97" Column="13" EndLine="97" EndColumn="69" Covered="True" />
-          <Statement FileIndex="16" Line="99" Column="13" EndLine="99" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="88" Column="13" EndLine="88" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="89" Column="13" EndLine="89" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="91" Column="13" EndLine="91" EndColumn="77" Covered="True" />
+          <Statement FileIndex="11" Line="92" Column="13" EndLine="92" EndColumn="126" Covered="True" />
+          <Statement FileIndex="11" Line="94" Column="13" EndLine="94" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="95" Column="13" EndLine="95" EndColumn="79" Covered="True" />
+          <Statement FileIndex="11" Line="96" Column="13" EndLine="96" EndColumn="56" Covered="True" />
+          <Statement FileIndex="11" Line="97" Column="13" EndLine="97" EndColumn="69" Covered="True" />
+          <Statement FileIndex="11" Line="99" Column="13" EndLine="99" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddWithPostEvictionCallbackThenGet_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="16" Line="105" Column="13" EndLine="105" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="106" Column="13" EndLine="106" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="108" Column="13" EndLine="111" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="113" Column="13" EndLine="113" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="114" Column="13" EndLine="114" EndColumn="79" Covered="True" />
-          <Statement FileIndex="16" Line="115" Column="13" EndLine="115" EndColumn="56" Covered="True" />
-          <Statement FileIndex="16" Line="116" Column="13" EndLine="116" EndColumn="69" Covered="True" />
-          <Statement FileIndex="16" Line="118" Column="13" EndLine="118" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="105" Column="13" EndLine="105" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="106" Column="13" EndLine="106" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="108" Column="13" EndLine="111" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="113" Column="13" EndLine="113" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="114" Column="13" EndLine="114" EndColumn="79" Covered="True" />
+          <Statement FileIndex="11" Line="115" Column="13" EndLine="115" EndColumn="56" Covered="True" />
+          <Statement FileIndex="11" Line="116" Column="13" EndLine="116" EndColumn="69" Covered="True" />
+          <Statement FileIndex="11" Line="118" Column="13" EndLine="118" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetOrCreateThenRemoveWithNoSetUp_Guid_ReturnsDefaultValue():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="16" Line="158" Column="13" EndLine="158" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="159" Column="13" EndLine="159" EndColumn="50" Covered="True" />
-          <Statement FileIndex="16" Line="161" Column="13" EndLine="161" EndColumn="98" Covered="True" />
-          <Statement FileIndex="16" Line="162" Column="13" EndLine="162" EndColumn="47" Covered="True" />
-          <Statement FileIndex="16" Line="163" Column="13" EndLine="163" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="165" Column="13" EndLine="169" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="170" Column="9" EndLine="170" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="158" Column="13" EndLine="158" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="159" Column="13" EndLine="159" EndColumn="50" Covered="True" />
+          <Statement FileIndex="11" Line="161" Column="13" EndLine="161" EndColumn="98" Covered="True" />
+          <Statement FileIndex="11" Line="162" Column="13" EndLine="162" EndColumn="47" Covered="True" />
+          <Statement FileIndex="11" Line="163" Column="13" EndLine="163" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="165" Column="13" EndLine="169" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="170" Column="9" EndLine="170" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetOrCreateWithNoSetUp_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="16" Line="175" Column="13" EndLine="175" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="176" Column="13" EndLine="176" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="178" Column="13" EndLine="178" EndColumn="96" Covered="True" />
-          <Statement FileIndex="16" Line="180" Column="13" EndLine="183" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="184" Column="9" EndLine="184" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="175" Column="13" EndLine="175" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="176" Column="13" EndLine="176" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="178" Column="13" EndLine="178" EndColumn="96" Covered="True" />
+          <Statement FileIndex="11" Line="180" Column="13" EndLine="183" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="184" Column="9" EndLine="184" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetOrCreateWithNoSetUp_TestObject_ReturnsExpectedResult():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="16" Line="189" Column="13" EndLine="189" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="190" Column="13" EndLine="190" EndColumn="51" Covered="True" />
-          <Statement FileIndex="16" Line="192" Column="13" EndLine="192" EndColumn="96" Covered="True" />
-          <Statement FileIndex="16" Line="194" Column="13" EndLine="197" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="198" Column="9" EndLine="198" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="189" Column="13" EndLine="189" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="190" Column="13" EndLine="190" EndColumn="51" Covered="True" />
+          <Statement FileIndex="11" Line="192" Column="13" EndLine="192" EndColumn="96" Covered="True" />
+          <Statement FileIndex="11" Line="194" Column="13" EndLine="197" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="198" Column="9" EndLine="198" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetOrCreateWithSetUp_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="16" Line="203" Column="13" EndLine="203" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="204" Column="13" EndLine="204" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="205" Column="13" EndLine="205" EndColumn="60" Covered="True" />
-          <Statement FileIndex="16" Line="207" Column="13" EndLine="207" EndColumn="96" Covered="True" />
-          <Statement FileIndex="16" Line="209" Column="13" EndLine="209" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="210" Column="9" EndLine="210" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="203" Column="13" EndLine="203" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="204" Column="13" EndLine="204" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="205" Column="13" EndLine="205" EndColumn="60" Covered="True" />
+          <Statement FileIndex="11" Line="207" Column="13" EndLine="207" EndColumn="96" Covered="True" />
+          <Statement FileIndex="11" Line="209" Column="13" EndLine="209" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="210" Column="9" EndLine="210" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetThenGetOrCreateThenGetWithNoSetUp_TestObject_ReturnsExpectedResults():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="16" Line="215" Column="13" EndLine="215" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="216" Column="13" EndLine="216" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="217" Column="13" EndLine="217" EndColumn="52" Covered="True" />
-          <Statement FileIndex="16" Line="218" Column="13" EndLine="218" EndColumn="51" Covered="True" />
-          <Statement FileIndex="16" Line="220" Column="13" EndLine="220" EndColumn="76" Covered="True" />
-          <Statement FileIndex="16" Line="221" Column="13" EndLine="221" EndColumn="98" Covered="True" />
-          <Statement FileIndex="16" Line="222" Column="13" EndLine="222" EndColumn="76" Covered="True" />
-          <Statement FileIndex="16" Line="224" Column="13" EndLine="233" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="234" Column="9" EndLine="234" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="215" Column="13" EndLine="215" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="216" Column="13" EndLine="216" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="217" Column="13" EndLine="217" EndColumn="52" Covered="True" />
+          <Statement FileIndex="11" Line="218" Column="13" EndLine="218" EndColumn="51" Covered="True" />
+          <Statement FileIndex="11" Line="220" Column="13" EndLine="220" EndColumn="76" Covered="True" />
+          <Statement FileIndex="11" Line="221" Column="13" EndLine="221" EndColumn="98" Covered="True" />
+          <Statement FileIndex="11" Line="222" Column="13" EndLine="222" EndColumn="76" Covered="True" />
+          <Statement FileIndex="11" Line="224" Column="13" EndLine="233" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="234" Column="9" EndLine="234" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetThenGetOrCreateThenGetWithSetUp_TestObject_ReturnsExpectedResults():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="16" Line="239" Column="13" EndLine="239" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="240" Column="13" EndLine="240" EndColumn="51" Covered="True" />
-          <Statement FileIndex="16" Line="242" Column="13" EndLine="242" EndColumn="60" Covered="True" />
-          <Statement FileIndex="16" Line="244" Column="13" EndLine="244" EndColumn="76" Covered="True" />
-          <Statement FileIndex="16" Line="245" Column="13" EndLine="245" EndColumn="97" Covered="True" />
-          <Statement FileIndex="16" Line="246" Column="13" EndLine="246" EndColumn="76" Covered="True" />
-          <Statement FileIndex="16" Line="248" Column="13" EndLine="253" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="254" Column="9" EndLine="254" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="239" Column="13" EndLine="239" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="240" Column="13" EndLine="240" EndColumn="51" Covered="True" />
+          <Statement FileIndex="11" Line="242" Column="13" EndLine="242" EndColumn="60" Covered="True" />
+          <Statement FileIndex="11" Line="244" Column="13" EndLine="244" EndColumn="76" Covered="True" />
+          <Statement FileIndex="11" Line="245" Column="13" EndLine="245" EndColumn="97" Covered="True" />
+          <Statement FileIndex="11" Line="246" Column="13" EndLine="246" EndColumn="76" Covered="True" />
+          <Statement FileIndex="11" Line="248" Column="13" EndLine="253" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="254" Column="9" EndLine="254" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="GetWithNoSetUp_ReturnsDefaultValue():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="16" Line="259" Column="13" EndLine="259" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="261" Column="13" EndLine="261" EndColumn="69" Covered="True" />
-          <Statement FileIndex="16" Line="263" Column="13" EndLine="263" EndColumn="66" Covered="True" />
-          <Statement FileIndex="16" Line="264" Column="9" EndLine="264" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="259" Column="13" EndLine="259" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="261" Column="13" EndLine="261" EndColumn="69" Covered="True" />
+          <Statement FileIndex="11" Line="263" Column="13" EndLine="263" EndColumn="66" Covered="True" />
+          <Statement FileIndex="11" Line="264" Column="9" EndLine="264" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="MinimumViableInterface_Guid_ReturnsExpectedResult():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="16" Line="269" Column="13" EndLine="269" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="270" Column="13" EndLine="270" EndColumn="49" Covered="True" />
-          <Statement FileIndex="16" Line="272" Column="13" EndLine="272" EndColumn="96" Covered="True" />
-          <Statement FileIndex="16" Line="274" Column="13" EndLine="274" EndColumn="59" Covered="True" />
-          <Statement FileIndex="16" Line="275" Column="9" EndLine="275" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="269" Column="13" EndLine="269" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="270" Column="13" EndLine="270" EndColumn="49" Covered="True" />
+          <Statement FileIndex="11" Line="272" Column="13" EndLine="272" EndColumn="96" Covered="True" />
+          <Statement FileIndex="11" Line="274" Column="13" EndLine="274" EndColumn="59" Covered="True" />
+          <Statement FileIndex="11" Line="275" Column="9" EndLine="275" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="RemoveWithNoSetUp_DoesNothing():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="16" Line="280" Column="13" EndLine="280" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="282" Column="13" EndLine="285" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="286" Column="9" EndLine="286" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="280" Column="13" EndLine="280" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="282" Column="13" EndLine="285" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="286" Column="9" EndLine="286" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="RemoveWithNoSetUp_Guid_ReturnsDefaultValue():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="16" Line="291" Column="13" EndLine="291" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="293" Column="13" EndLine="293" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="294" Column="13" EndLine="294" EndColumn="47" Covered="True" />
-          <Statement FileIndex="16" Line="295" Column="13" EndLine="295" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="297" Column="13" EndLine="301" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="302" Column="9" EndLine="302" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="291" Column="13" EndLine="291" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="293" Column="13" EndLine="293" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="294" Column="13" EndLine="294" EndColumn="47" Covered="True" />
+          <Statement FileIndex="11" Line="295" Column="13" EndLine="295" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="297" Column="13" EndLine="301" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="302" Column="9" EndLine="302" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="RemoveWithSetUp_Guid_ReturnsDefaultValue():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="16" Line="307" Column="13" EndLine="307" EndColumn="55" Covered="True" />
-          <Statement FileIndex="16" Line="308" Column="13" EndLine="308" EndColumn="50" Covered="True" />
-          <Statement FileIndex="16" Line="310" Column="13" EndLine="310" EndColumn="61" Covered="True" />
-          <Statement FileIndex="16" Line="312" Column="13" EndLine="312" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="313" Column="13" EndLine="313" EndColumn="47" Covered="True" />
-          <Statement FileIndex="16" Line="314" Column="13" EndLine="314" EndColumn="70" Covered="True" />
-          <Statement FileIndex="16" Line="316" Column="13" EndLine="320" EndColumn="16" Covered="True" />
-          <Statement FileIndex="16" Line="321" Column="9" EndLine="321" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="307" Column="13" EndLine="307" EndColumn="55" Covered="True" />
+          <Statement FileIndex="11" Line="308" Column="13" EndLine="308" EndColumn="50" Covered="True" />
+          <Statement FileIndex="11" Line="310" Column="13" EndLine="310" EndColumn="61" Covered="True" />
+          <Statement FileIndex="11" Line="312" Column="13" EndLine="312" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="313" Column="13" EndLine="313" EndColumn="47" Covered="True" />
+          <Statement FileIndex="11" Line="314" Column="13" EndLine="314" EndColumn="70" Covered="True" />
+          <Statement FileIndex="11" Line="316" Column="13" EndLine="320" EndColumn="16" Covered="True" />
+          <Statement FileIndex="11" Line="321" Column="9" EndLine="321" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="SetUp():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="16" Line="18" Column="13" EndLine="18" EndColumn="67" Covered="True" />
-          <Statement FileIndex="16" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="11" Line="18" Column="13" EndLine="18" EndColumn="68" Covered="True" />
+          <Statement FileIndex="11" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="TestObject" CoveredStatements="1" TotalStatements="3" CoveragePercent="33">
         <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="17" Line="7" Column="40" EndLine="7" EndColumn="54" Covered="True" />
+          <Statement FileIndex="12" Line="7" Column="40" EndLine="7" EndColumn="54" Covered="True" />
         </Method>
         <Method Name="get_Id():System.Guid" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="17" Line="7" Column="26" EndLine="7" EndColumn="30" Covered="False" />
+          <Statement FileIndex="12" Line="7" Column="26" EndLine="7" EndColumn="30" Covered="False" />
         </Method>
         <Method Name="set_Id(System.Guid):System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="17" Line="7" Column="31" EndLine="7" EndColumn="35" Covered="False" />
+          <Statement FileIndex="12" Line="7" Column="31" EndLine="7" EndColumn="35" Covered="False" />
         </Method>
       </Type>
     </Namespace>
@@ -650,28 +591,28 @@
         <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
         <Method Name="AddThenGetWithNoSetUp_TestObject_GetInvokedOnce():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="20" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
-          <Statement FileIndex="20" Line="29" Column="13" EndLine="29" EndColumn="51" Covered="True" />
-          <Statement FileIndex="20" Line="31" Column="13" EndLine="31" EndColumn="60" Covered="True" />
-          <Statement FileIndex="20" Line="33" Column="13" EndLine="33" EndColumn="75" Covered="True" />
-          <Statement FileIndex="20" Line="36" Column="13" EndLine="36" EndColumn="100" Covered="True" />
-          <Statement FileIndex="20" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="17" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
+          <Statement FileIndex="17" Line="29" Column="13" EndLine="29" EndColumn="51" Covered="True" />
+          <Statement FileIndex="17" Line="31" Column="13" EndLine="31" EndColumn="60" Covered="True" />
+          <Statement FileIndex="17" Line="33" Column="13" EndLine="33" EndColumn="75" Covered="True" />
+          <Statement FileIndex="17" Line="36" Column="13" EndLine="36" EndColumn="100" Covered="True" />
+          <Statement FileIndex="17" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddWithNoSetUp_TestObject_AddInvokedOnce():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="20" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
-          <Statement FileIndex="20" Line="43" Column="13" EndLine="43" EndColumn="51" Covered="True" />
-          <Statement FileIndex="20" Line="45" Column="13" EndLine="45" EndColumn="60" Covered="True" />
-          <Statement FileIndex="20" Line="47" Column="13" EndLine="47" EndColumn="89" Covered="True" />
-          <Statement FileIndex="20" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="17" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
+          <Statement FileIndex="17" Line="43" Column="13" EndLine="43" EndColumn="51" Covered="True" />
+          <Statement FileIndex="17" Line="45" Column="13" EndLine="45" EndColumn="60" Covered="True" />
+          <Statement FileIndex="17" Line="47" Column="13" EndLine="47" EndColumn="89" Covered="True" />
+          <Statement FileIndex="17" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="SetUp():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="20" Line="15" Column="13" EndLine="15" EndColumn="26" Covered="True" />
-          <Statement FileIndex="20" Line="17" Column="13" EndLine="17" EndColumn="54" Covered="True" />
-          <Statement FileIndex="20" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="17" Line="15" Column="13" EndLine="15" EndColumn="26" Covered="True" />
+          <Statement FileIndex="17" Line="17" Column="13" EndLine="17" EndColumn="54" Covered="True" />
+          <Statement FileIndex="17" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntry&lt;T&gt;(System.String,T):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="20" Line="22" Column="13" EndLine="22" EndColumn="72" Covered="True" />
-          <Statement FileIndex="20" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="17" Line="22" Column="13" EndLine="22" EndColumn="72" Covered="True" />
+          <Statement FileIndex="17" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -680,28 +621,28 @@
     <Namespace Name="MemoryCache.Testing.NSubstitute.Tests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
       <Type Name="Tests" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
         <Method Name="AddThenGetWithNoSetUp_TestObject_GetInvokedOnce():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="22" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
-          <Statement FileIndex="22" Line="29" Column="13" EndLine="29" EndColumn="51" Covered="True" />
-          <Statement FileIndex="22" Line="31" Column="13" EndLine="31" EndColumn="60" Covered="True" />
-          <Statement FileIndex="22" Line="33" Column="13" EndLine="33" EndColumn="75" Covered="True" />
-          <Statement FileIndex="22" Line="36" Column="13" EndLine="36" EndColumn="75" Covered="True" />
-          <Statement FileIndex="22" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="19" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
+          <Statement FileIndex="19" Line="29" Column="13" EndLine="29" EndColumn="51" Covered="True" />
+          <Statement FileIndex="19" Line="31" Column="13" EndLine="31" EndColumn="60" Covered="True" />
+          <Statement FileIndex="19" Line="33" Column="13" EndLine="33" EndColumn="75" Covered="True" />
+          <Statement FileIndex="19" Line="36" Column="13" EndLine="36" EndColumn="75" Covered="True" />
+          <Statement FileIndex="19" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AddWithNoSetUp_TestObject_AddInvokedOnce():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="22" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
-          <Statement FileIndex="22" Line="43" Column="13" EndLine="43" EndColumn="51" Covered="True" />
-          <Statement FileIndex="22" Line="45" Column="13" EndLine="45" EndColumn="60" Covered="True" />
-          <Statement FileIndex="22" Line="47" Column="13" EndLine="47" EndColumn="64" Covered="True" />
-          <Statement FileIndex="22" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="19" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
+          <Statement FileIndex="19" Line="43" Column="13" EndLine="43" EndColumn="51" Covered="True" />
+          <Statement FileIndex="19" Line="45" Column="13" EndLine="45" EndColumn="60" Covered="True" />
+          <Statement FileIndex="19" Line="47" Column="13" EndLine="47" EndColumn="64" Covered="True" />
+          <Statement FileIndex="19" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="SetUp():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="22" Line="15" Column="13" EndLine="15" EndColumn="26" Covered="True" />
-          <Statement FileIndex="22" Line="17" Column="13" EndLine="17" EndColumn="54" Covered="True" />
-          <Statement FileIndex="22" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="19" Line="15" Column="13" EndLine="15" EndColumn="26" Covered="True" />
+          <Statement FileIndex="19" Line="17" Column="13" EndLine="17" EndColumn="54" Covered="True" />
+          <Statement FileIndex="19" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="SetUpCacheEntry&lt;T&gt;(System.String,T):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="22" Line="22" Column="13" EndLine="22" EndColumn="72" Covered="True" />
-          <Statement FileIndex="22" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="19" Line="22" Column="13" EndLine="22" EndColumn="72" Covered="True" />
+          <Statement FileIndex="19" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>

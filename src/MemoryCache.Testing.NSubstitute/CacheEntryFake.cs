@@ -1,7 +1,7 @@
-﻿using MemoryCache.Testing.Common.Extensions;
-using MemoryCache.Testing.NSubstitute.Extensions;
+﻿using MemoryCache.Testing.NSubstitute.Extensions;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using rgvlee.Core.Common.Extensions;
 
 namespace MemoryCache.Testing.NSubstitute
 {

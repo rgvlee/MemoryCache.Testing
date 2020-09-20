@@ -2,18 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
     <Authors>rgvlee</Authors>
-    <Company>rgvlee</Company>
-    <description>A mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using NSubstitute.</description>
-    <Copyright>Copyright (c) 2020 Lee Anderson</Copyright>
-    <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/rgvlee/MemoryCache.Testing/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/rgvlee/MemoryCache.Testing/</RepositoryUrl>
-    <PackageTags>MemoryCache IMemoryCache NSubstitute nsub mock testing</PackageTags>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageVersion>1.0.0</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
