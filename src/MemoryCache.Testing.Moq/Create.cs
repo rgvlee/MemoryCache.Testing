@@ -1,7 +1,7 @@
-﻿using MemoryCache.Testing.Common.Helpers;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Moq;
+using rgvlee.Core.Common.Helpers;
 
 namespace MemoryCache.Testing.Moq
 {
@@ -10,7 +10,7 @@ namespace MemoryCache.Testing.Moq
     /// </summary>
     public static class Create
     {
-        private static readonly ILogger Logger = LoggerHelper.CreateLogger(typeof(Create));
+        private static readonly ILogger Logger = LoggingHelper.CreateLogger(typeof(Create));
 
         /// <summary>
         ///     Creates a mocked memory cache.

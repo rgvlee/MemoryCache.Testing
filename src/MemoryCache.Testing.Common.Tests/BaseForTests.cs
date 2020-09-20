@@ -1,11 +1,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using MemoryCache.Testing.Common.Helpers;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 using NUnit.Framework;
+using rgvlee.Core.Common.Helpers;
 
 namespace MemoryCache.Testing.Common.Tests
 {
@@ -15,10 +15,10 @@ namespace MemoryCache.Testing.Common.Tests
         [SetUp]
         public virtual void SetUp()
         {
-            LoggerHelper.LoggerFactory.AddConsole(LogLevel.Debug);
+            LoggingHelper.LoggerFactory.AddConsole(LogLevel.Debug);
         }
 
-        protected static readonly ILogger<BaseForTests> Logger = LoggerHelper.CreateLogger<BaseForTests>();
+        protected static readonly ILogger<BaseForTests> Logger = LoggingHelper.CreateLogger<BaseForTests>();
 
         protected IMemoryCache MockedCache;
 
