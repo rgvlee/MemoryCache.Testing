@@ -8,9 +8,9 @@ MemoryCache.Testing is a mocking library that creates Microsoft.Extensions.Cachi
 
 ## Resources
 
--   [Source repository](https://github.com/rgvlee/MemoryCache.Testing/)
--   [MemoryCache.Testing.Moq - NuGet](https://www.nuget.org/packages/MemoryCache.Testing.Moq/)
--   [MemoryCache.Testing.NSubstitute - NuGet](https://www.nuget.org/packages/MemoryCache.Testing.NSubstitute/)
+-   [Source repository](https://github.com/rgvlee/MemoryCache.Testing)
+-   [MemoryCache.Testing.Moq - NuGet](https://www.nuget.org/packages/MemoryCache.Testing.Moq)
+-   [MemoryCache.Testing.NSubstitute - NuGet](https://www.nuget.org/packages/MemoryCache.Testing.NSubstitute)
 
 ## Usage
 

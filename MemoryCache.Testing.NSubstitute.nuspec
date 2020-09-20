@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>MemoryCache.Testing.NSubstitute</id>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <authors>rgvlee</authors>
     <owners>rgvlee</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
-    <projectUrl>https://github.com/rgvlee/MemoryCache.Testing/</projectUrl>
+    <projectUrl>https://github.com/rgvlee/MemoryCache.Testing</projectUrl>
     <description>A mocking library that creates Microsoft.Extensions.Caching.Memory IMemoryCache system mocks using NSubstitute.</description>
     <copyright>Copyright (c) 2020 Lee Anderson</copyright>
     <tags>MemoryCache IMemoryCache NSubstitute nsub mock testing</tags>
-    <repository url="https://github.com/rgvlee/MemoryCache.Testing/" />
+    <repository url="https://github.com/rgvlee/MemoryCache.Testing" />
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="Microsoft.Extensions.Caching.Memory" version="2.1.0" exclude="Build,Analyzers" />
